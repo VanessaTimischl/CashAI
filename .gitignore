@@ -5,6 +5,21 @@ __pycache__/
 # VS Code
 .vscode/
 
-# Datendateien nicht auf GitHub hochladen
-*.xlsx
-*.csv
+# Rohdaten nicht hochladen
+Angebote/*.xlsx
+Angebote/*.csv
+
+Ausgangsrechnungen/*.xlsx
+Ausgangsrechnungen/*.csv
+
+Bestellungen/*.xlsx
+Bestellungen/*.csv
+
+Kundenstamm/*.xlsx
+Kundenstamm/*.csv
+
+Lagerbestand/*.xlsx
+Lagerbestand/*.csv
+
+Lieferantenstamm/*.xlsx
+Lieferantenstamm/*.csv

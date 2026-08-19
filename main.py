@@ -422,13 +422,229 @@ for datum in validierung.index:
         neuer_wert
     ])
 
-# Python
-__pycache__/
-*.pyc
+print("\n--- AUSGANGSRECHNUNGEN ---")
 
-# VS Code
-.vscode/
+rechnungen = pd.read_excel(
+    "Ausgangsrechnungen/ausgangsrechnungen.xlsx"
+)
 
-# Datendateien nicht auf GitHub hochladen
-*.xlsx
-*.csv
+print("\nANZAHL ZEILEN UND SPALTEN:")
+print(rechnungen.shape)
+
+print("\nSPALTENNAMEN:")
+print(rechnungen.columns.tolist())
+
+print("\nDATENTYPEN:")
+print(rechnungen.dtypes)
+
+print("\nERSTE 5 ZEILEN:")
+print(rechnungen.head())
+
+print("\nFEHLENDE WERTE:")
+print(rechnungen.isnull().sum())
+# --------------------------------------------------
+# AUSGANGSRECHNUNGEN FÜR SARIMA AUFBEREITEN
+# --------------------------------------------------
+
+print("\n--- DATENQUALITÄT AUSGANGSRECHNUNGEN ---")
+
+print("\nFEHLENDE WERTE:")
+print(
+    rechnungen[
+        ["rechnungsdatum", "rechnungsbetrag"]
+    ].isnull().sum()
+)
+
+print("\nZEITRAUM:")
+print("Erste Rechnung:", rechnungen["rechnungsdatum"].min())
+print("Letzte Rechnung:", rechnungen["rechnungsdatum"].max())
+
+print("\nANZAHL RECHNUNGEN:")
+print(len(rechnungen))
+
+print("\nGESAMTER RECHNUNGSBETRAG:")
+print(f'{rechnungen["rechnungsbetrag"].sum():,.2f} Euro')
+
+
+# --------------------------------------------------
+# MONATLICHEN UMSATZ ERSTELLEN
+# --------------------------------------------------
+
+monatsumsatz = (
+    rechnungen
+    .set_index("rechnungsdatum")["rechnungsbetrag"]
+    .resample("MS")
+    .sum()
+)
+
+print("\nMONATLICHER UMSATZ:")
+print(monatsumsatz)
+# --------------------------------------------------
+# TRAINING UND TEST AUFTEILEN
+# --------------------------------------------------
+
+train = monatsumsatz[monatsumsatz.index < "2026-01-01"]
+
+test = monatsumsatz[
+    (monatsumsatz.index >= "2026-01-01") &
+    (monatsumsatz.index <= "2026-06-01")
+]
+
+print("\nTRAINING:")
+print(train)
+
+print("\nTEST:")
+print(test)
+from statsmodels.tsa.statespace.sarimax import SARIMAX
+
+modell = SARIMAX(
+    train,
+    order=(1,1,1),
+    seasonal_order=(0,0,0,12),
+    enforce_stationarity=False,
+    enforce_invertibility=False
+)
+
+modell_fit = modell.fit(disp=False)
+from sklearn.metrics import mean_absolute_error
+from sklearn.metrics import mean_squared_error
+import numpy as np
+
+mae = mean_absolute_error(test, prognose_test)
+rmse = np.sqrt(mean_squared_error(test, prognose_test))
+mape = np.mean(np.abs((test - prognose_test) / test)) * 100
+
+print("\nMODELLBEWERTUNG:")
+print(f"MAE: {mae:,.2f} €")
+print(f"RMSE: {rmse:,.2f} €")
+print(f"MAPE: {mape:.2f} %")
+# ==================================================
+# NEUE SARIMA-ANALYSE AUSGANGSRECHNUNGEN
+# ==================================================
+
+import pandas as pd
+import numpy as np
+from statsmodels.tsa.statespace.sarimax import SARIMAX
+from sklearn.metrics import mean_absolute_error, mean_squared_error
+
+
+# 1. Ausgangsrechnungen einlesen
+rechnungen = pd.read_excel(
+    "Ausgangsrechnungen/ausgangsrechnungen.xlsx"
+)
+
+
+# 2. Monatlichen Umsatz bilden
+monatsumsatz = (
+    rechnungen
+    .set_index("rechnungsdatum")["rechnungsbetrag"]
+    .resample("MS")
+    .sum()
+)
+
+
+# 3. Training und Test definieren
+train = monatsumsatz[
+    monatsumsatz.index < "2026-01-01"
+]
+
+test = monatsumsatz[
+    (monatsumsatz.index >= "2026-01-01") &
+    (monatsumsatz.index <= "2026-06-01")
+]
+
+print("\n======================================")
+print("SARIMA – AUSGANGSRECHNUNGEN")
+print("======================================")
+
+print("\nAnzahl Trainingsmonate:", len(train))
+print("Anzahl Testmonate:", len(test))
+
+print("\nTRAININGSZEITRAUM:")
+print(train.index.min(), "bis", train.index.max())
+
+print("\nTESTZEITRAUM:")
+print(test.index.min(), "bis", test.index.max())
+
+
+# 4. SARIMA-Modell erstellen
+modell = SARIMAX(
+    train,
+    order=(1, 1, 1),
+    seasonal_order=(0, 0, 0, 12),
+    enforce_stationarity=False,
+    enforce_invertibility=False
+)
+
+
+# 5. Modell trainieren
+modell_fit = modell.fit(
+    disp=False
+)
+
+
+# 6. Prognose für Jänner bis Juni 2026
+prognose_test = modell_fit.forecast(
+    steps=len(test)
+)
+
+print("\nSARIMA-PROGNOSE JAN–JUN 2026:")
+print(prognose_test)
+
+
+# 7. Ist und Prognose vergleichen
+vergleich = pd.DataFrame({
+    "Ist": test,
+    "SARIMA_Prognose": prognose_test
+})
+
+vergleich["Abweichung_Euro"] = (
+    vergleich["Ist"]
+    - vergleich["SARIMA_Prognose"]
+)
+
+vergleich["Absolute_Abweichung"] = (
+    vergleich["Abweichung_Euro"].abs()
+)
+
+vergleich["Abweichung_Prozent"] = (
+    vergleich["Abweichung_Euro"]
+    / vergleich["Ist"]
+) * 100
+
+
+print("\n======================================")
+print("ABWEICHUNGSANALYSE JAN–JUN 2026")
+print("======================================")
+
+print(vergleich.round(2))
+
+
+# 8. Modellgüte berechnen
+mae = mean_absolute_error(
+    test,
+    prognose_test
+)
+
+rmse = np.sqrt(
+    mean_squared_error(
+        test,
+        prognose_test
+    )
+)
+
+mape = np.mean(
+    np.abs(
+        (test - prognose_test) / test
+    )
+) * 100
+
+
+print("\n======================================")
+print("MODELLBEWERTUNG SARIMA")
+print("======================================")
+
+print(f"MAE:  {mae:,.2f} Euro")
+print(f"RMSE: {rmse:,.2f} Euro")
+print(f"MAPE: {mape:.2f} %")
+prognose_test

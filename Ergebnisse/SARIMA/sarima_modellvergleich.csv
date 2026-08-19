@@ -1,0 +1,7 @@
+Datenreihe;Modell;MAE_Euro;RMSE_Euro;MAPE_Prozent
+Angebote;Baseline;643980,45;768560,24;42,79
+Angebote;SARIMA;347574,08;406796,83;26,59
+Bestellungen;Baseline;142226,63;191139,67;22,08
+Bestellungen;SARIMA;385312,17;479134,44;54,72
+Rechnungen;Baseline;181614,2;239749,99;19,35
+Rechnungen;SARIMA;211761,18;241075,5;36,28
