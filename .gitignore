@@ -1,0 +1,10 @@
+# Python
+__pycache__/
+*.pyc
+
+# VS Code
+.vscode/
+
+# Datendateien nicht auf GitHub hochladen
+*.xlsx
+*.csv
