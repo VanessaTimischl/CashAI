@@ -1942,3 +1942,658 @@ plt.show()
 
 print("\nGrafik gespeichert:")
 print(grafik_path)
+# ==================================================
+# 57. CASHFLOW-BACKTEST JAN-JUN 2026
+# ==================================================
+
+from sklearn.metrics import mean_absolute_error, mean_squared_error
+
+print("\n======================================")
+print("CASHFLOW-BACKTEST JAN-JUN 2026")
+print("======================================")
+
+backtest_stichtag = pd.Timestamp("2025-12-31")
+
+
+# ==================================================
+# 58. ZAHLUNGSVERHALTEN NUR AUS VERGANGENHEIT
+# ==================================================
+
+# Kunden:
+# Nur Zahlungen verwenden, die bis 31.12.2025 bekannt waren
+
+rechnungen_train = rechnungen[
+    rechnungen["zahlungsdatum_ist"] <= backtest_stichtag
+].copy()
+
+rechnungen_train["zahlungsabweichung_bt"] = (
+    rechnungen_train["zahlungsdatum_ist"]
+    - rechnungen_train["faelligkeitsdatum"]
+).dt.days
+
+kunden_median_bt = (
+    rechnungen_train
+    .dropna(
+        subset=[
+            "kunden_id",
+            "zahlungsabweichung_bt"
+        ]
+    )
+    .groupby("kunden_id")[
+        "zahlungsabweichung_bt"
+    ]
+    .median()
+)
+
+globaler_kunden_median_bt = (
+    rechnungen_train[
+        "zahlungsabweichung_bt"
+    ].median()
+)
+
+
+# Lieferanten:
+# Nur Zahlungen verwenden, die bis 31.12.2025 bekannt waren
+
+bestellungen_train = bestellungen[
+    bestellungen["zahlungsdatum_ist"] <= backtest_stichtag
+].copy()
+
+bestellungen_train["bestellung_bis_zahlung_bt"] = (
+    bestellungen_train["zahlungsdatum_ist"]
+    - bestellungen_train["bestelldatum"]
+).dt.days
+
+lieferanten_median_bt = (
+    bestellungen_train
+    .dropna(
+        subset=[
+            "lieferanten_id",
+            "bestellung_bis_zahlung_bt"
+        ]
+    )
+    .groupby("lieferanten_id")[
+        "bestellung_bis_zahlung_bt"
+    ]
+    .median()
+)
+
+globaler_lieferanten_median_bt = (
+    bestellungen_train[
+        "bestellung_bis_zahlung_bt"
+    ].median()
+)
+
+
+print(
+    "Kunden-Median Backtest:",
+    globaler_kunden_median_bt,
+    "Tage"
+)
+
+print(
+    "Lieferanten-Median Backtest:",
+    globaler_lieferanten_median_bt,
+    "Tage"
+)
+# ==================================================
+# 59. OFFENE POSITIONEN AM 31.12.2025
+# ==================================================
+
+# --------------------------------------------------
+# OFFENE KUNDENRECHNUNGEN
+# --------------------------------------------------
+
+offene_rechnungen_bt = rechnungen[
+    (rechnungen["rechnungsdatum"] <= backtest_stichtag)
+    &
+    (
+        rechnungen["zahlungsdatum_ist"].isna()
+        |
+        (
+            rechnungen["zahlungsdatum_ist"]
+            > backtest_stichtag
+        )
+    )
+].copy()
+
+
+offene_rechnungen_bt[
+    "kunden_median_bt"
+] = (
+    offene_rechnungen_bt["kunden_id"]
+    .map(kunden_median_bt)
+    .fillna(globaler_kunden_median_bt)
+)
+
+
+offene_rechnungen_bt[
+    "forecast_zahlungsdatum"
+] = (
+    offene_rechnungen_bt["faelligkeitsdatum"]
+    + pd.to_timedelta(
+        offene_rechnungen_bt["kunden_median_bt"],
+        unit="D"
+    )
+)
+
+
+# --------------------------------------------------
+# OFFENE BESTELLUNGEN
+# --------------------------------------------------
+
+offene_bestellungen_bt = bestellungen[
+    (bestellungen["bestelldatum"] <= backtest_stichtag)
+    &
+    (
+        bestellungen["zahlungsdatum_ist"].isna()
+        |
+        (
+            bestellungen["zahlungsdatum_ist"]
+            > backtest_stichtag
+        )
+    )
+].copy()
+
+
+offene_bestellungen_bt[
+    "lieferanten_median_bt"
+] = (
+    offene_bestellungen_bt["lieferanten_id"]
+    .map(lieferanten_median_bt)
+    .fillna(globaler_lieferanten_median_bt)
+)
+
+
+# Für den Backtest verwenden wir das Bestelldatum
+# + historisches Zahlungsverhalten.
+# Dadurch verwenden wir keine später bekannten Ist-Zahlungsdaten.
+
+offene_bestellungen_bt[
+    "forecast_zahlungsdatum"
+] = (
+    offene_bestellungen_bt["bestelldatum"]
+    + pd.to_timedelta(
+        offene_bestellungen_bt[
+            "lieferanten_median_bt"
+        ],
+        unit="D"
+    )
+)
+
+
+print("\nOFFENE POSITIONEN ZUM BACKTEST-STICHTAG:")
+
+print(
+    "Offene Rechnungen:",
+    len(offene_rechnungen_bt)
+)
+
+print(
+    "Offene Bestellungen:",
+    len(offene_bestellungen_bt)
+)
+# ==================================================
+# 60. OPERATIVER BACKTEST-FORECAST
+# ==================================================
+
+operative_einzahlungen_bt = (
+    offene_rechnungen_bt
+    .dropna(
+        subset=[
+            "forecast_zahlungsdatum",
+            "rechnungsbetrag"
+        ]
+    )
+    .set_index(
+        "forecast_zahlungsdatum"
+    )["rechnungsbetrag"]
+    .resample("W-SUN")
+    .sum()
+)
+
+operative_einzahlungen_bt.name = (
+    "Operative_Einzahlungen"
+)
+
+
+operative_auszahlungen_bt = (
+    offene_bestellungen_bt
+    .dropna(
+        subset=[
+            "forecast_zahlungsdatum",
+            "bestellwert"
+        ]
+    )
+    .set_index(
+        "forecast_zahlungsdatum"
+    )["bestellwert"]
+    .resample("W-SUN")
+    .sum()
+)
+
+operative_auszahlungen_bt.name = (
+    "Operative_Auszahlungen"
+)
+# ==================================================
+# 61. SARIMA JAN-JUN 2026 FÜR BACKTEST
+# ==================================================
+
+sarima_rechnungen_bt = {
+    "2026-01": 752084.13,
+    "2026-02": 852299.31,
+    "2026-03": 756870.42,
+    "2026-04": 765126.14,
+    "2026-05": 1592633.87,
+    "2026-06": 1550672.59
+}
+
+
+sarima_bestellungen_bt = {
+    "2026-01": 545580.02,
+    "2026-02": 466751.11,
+    "2026-03": 481852.17,
+    "2026-04": 1832508.02,
+    "2026-05": 1603723.37,
+    "2026-06": 1543635.99
+}# ==================================================
+# 62. SARIMA-BACKTEST IN CASHFLOW UMWANDELN
+# ==================================================
+
+sarima_rechnungen_bt_tag = monatsforecast_auf_tage(
+    sarima_rechnungen_bt,
+    "Forecast_Rechnungen"
+)
+
+sarima_bestellungen_bt_tag = monatsforecast_auf_tage(
+    sarima_bestellungen_bt,
+    "Forecast_Bestellungen"
+)
+
+
+# Historische Lags nur aus Trainingsdaten
+kunden_lag_bt = (
+    rechnungen_train["zahlungsdatum_ist"]
+    - rechnungen_train["rechnungsdatum"]
+).dt.days.median()
+
+
+lieferanten_lag_bt = (
+    bestellungen_train["zahlungsdatum_ist"]
+    - bestellungen_train["bestelldatum"]
+).dt.days.median()
+
+
+print(
+    "\nCash-In Lag Backtest:",
+    kunden_lag_bt,
+    "Tage"
+)
+
+print(
+    "Cash-Out Lag Backtest:",
+    lieferanten_lag_bt,
+    "Tage"
+)
+
+
+sarima_rechnungen_bt_tag[
+    "Zahlungsdatum"
+] = (
+    sarima_rechnungen_bt_tag["Datum"]
+    + pd.to_timedelta(
+        kunden_lag_bt,
+        unit="D"
+    )
+)
+
+
+sarima_bestellungen_bt_tag[
+    "Zahlungsdatum"
+] = (
+    sarima_bestellungen_bt_tag["Datum"]
+    + pd.to_timedelta(
+        lieferanten_lag_bt,
+        unit="D"
+    )
+)
+
+
+sarima_cash_in_bt = (
+    sarima_rechnungen_bt_tag
+    .set_index("Zahlungsdatum")[
+        "Forecast_Rechnungen"
+    ]
+    .resample("W-SUN")
+    .sum()
+)
+
+sarima_cash_in_bt.name = "SARIMA_Cash_In"
+
+
+sarima_cash_out_bt = (
+    sarima_bestellungen_bt_tag
+    .set_index("Zahlungsdatum")[
+        "Forecast_Bestellungen"
+    ]
+    .resample("W-SUN")
+    .sum()
+)
+
+sarima_cash_out_bt.name = "SARIMA_Cash_Out"
+# ==================================================
+# 63. BACKTEST-GESAMTFORECAST
+# ==================================================
+
+forecast_bt = pd.concat(
+    [
+        operative_einzahlungen_bt,
+        operative_auszahlungen_bt,
+        sarima_cash_in_bt,
+        sarima_cash_out_bt
+    ],
+    axis=1
+).fillna(0)
+
+
+forecast_bt["Forecast_Cash_In"] = (
+    forecast_bt["Operative_Einzahlungen"]
+    + forecast_bt["SARIMA_Cash_In"]
+)
+
+
+forecast_bt["Forecast_Cash_Out"] = (
+    forecast_bt["Operative_Auszahlungen"]
+    + forecast_bt["SARIMA_Cash_Out"]
+)
+
+
+forecast_bt["Forecast_Netto"] = (
+    forecast_bt["Forecast_Cash_In"]
+    - forecast_bt["Forecast_Cash_Out"]
+)
+# ==================================================
+# 64. IST JAN-JUN 2026
+# ==================================================
+
+ist_bt = cashflow[
+    (cashflow.index >= "2026-01-01")
+    &
+    (cashflow.index <= "2026-06-28")
+][
+    [
+        "Einzahlungen",
+        "Auszahlungen",
+        "Netto_Cashflow"
+    ]
+].copy()
+
+
+backtest = pd.concat(
+    [
+        ist_bt,
+        forecast_bt[
+            [
+                "Forecast_Cash_In",
+                "Forecast_Cash_Out",
+                "Forecast_Netto"
+            ]
+        ]
+    ],
+    axis=1
+)
+
+
+# Nur Wochen verwenden,
+# für die echte Ist-Werte vorhanden sind
+backtest = backtest.loc[
+    ist_bt.index
+].fillna(0)
+
+
+print("\n======================================")
+print("CASHFLOW-BACKTEST JAN-JUN 2026")
+print("======================================")
+
+print(
+    backtest.round(2)
+)
+# ==================================================
+# 65. CASHFLOW-FEHLERKENNZAHLEN
+# ==================================================
+
+def berechne_metriken(ist, forecast):
+
+    mae = mean_absolute_error(
+        ist,
+        forecast
+    )
+
+    rmse = np.sqrt(
+        mean_squared_error(
+            ist,
+            forecast
+        )
+    )
+
+    # Nur Werte ungleich 0 für MAPE verwenden
+    maske = ist != 0
+
+    if maske.sum() > 0:
+
+        mape = np.mean(
+            np.abs(
+                (
+                    ist[maske]
+                    - forecast[maske]
+                )
+                / ist[maske]
+            )
+        ) * 100
+
+    else:
+        mape = np.nan
+
+    return mae, rmse, mape
+
+
+# CASH-IN
+cashin_mae, cashin_rmse, cashin_mape = (
+    berechne_metriken(
+        backtest["Einzahlungen"],
+        backtest["Forecast_Cash_In"]
+    )
+)
+
+
+# CASH-OUT
+cashout_mae, cashout_rmse, cashout_mape = (
+    berechne_metriken(
+        backtest["Auszahlungen"],
+        backtest["Forecast_Cash_Out"]
+    )
+)
+
+
+# NETTO CASHFLOW
+netto_mae, netto_rmse, netto_mape = (
+    berechne_metriken(
+        backtest["Netto_Cashflow"],
+        backtest["Forecast_Netto"]
+    )
+)
+
+
+print("\n======================================")
+print("CASHFLOW-MODELLBEWERTUNG")
+print("======================================")
+
+
+print("\nCASH-IN")
+
+print(
+    f"MAE:  {cashin_mae:,.2f} Euro"
+)
+
+print(
+    f"RMSE: {cashin_rmse:,.2f} Euro"
+)
+
+print(
+    f"MAPE: {cashin_mape:.2f} %"
+)
+
+
+print("\nCASH-OUT")
+
+print(
+    f"MAE:  {cashout_mae:,.2f} Euro"
+)
+
+print(
+    f"RMSE: {cashout_rmse:,.2f} Euro"
+)
+
+print(
+    f"MAPE: {cashout_mape:.2f} %"
+)
+
+
+print("\nNETTO-CASHFLOW")
+
+print(
+    f"MAE:  {netto_mae:,.2f} Euro"
+)
+
+print(
+    f"RMSE: {netto_rmse:,.2f} Euro"
+)
+
+print(
+    f"MAPE: {netto_mape:.2f} %"
+)
+# ==================================================
+# 66. WAPE BERECHNEN
+# ==================================================
+
+def berechne_wape(ist, forecast):
+
+    nenner = np.abs(ist).sum()
+
+    if nenner == 0:
+        return np.nan
+
+    return (
+        np.abs(ist - forecast).sum()
+        / nenner
+        * 100
+    )
+
+
+cashin_wape = berechne_wape(
+    backtest["Einzahlungen"],
+    backtest["Forecast_Cash_In"]
+)
+
+cashout_wape = berechne_wape(
+    backtest["Auszahlungen"],
+    backtest["Forecast_Cash_Out"]
+)
+
+netto_wape = berechne_wape(
+    backtest["Netto_Cashflow"],
+    backtest["Forecast_Netto"]
+)
+
+
+print("\n======================================")
+print("WAPE")
+print("======================================")
+
+print(f"Cash-In WAPE:  {cashin_wape:.2f} %")
+print(f"Cash-Out WAPE: {cashout_wape:.2f} %")
+print(f"Netto WAPE:    {netto_wape:.2f} %")
+
+
+# ==================================================
+# 67. BACKTEST-KENNZAHLEN ALS TABELLE
+# ==================================================
+
+backtest_kennzahlen = pd.DataFrame({
+
+    "Bereich": [
+        "Cash-In",
+        "Cash-Out",
+        "Netto-Cashflow"
+    ],
+
+    "MAE_Euro": [
+        cashin_mae,
+        cashout_mae,
+        netto_mae
+    ],
+
+    "RMSE_Euro": [
+        cashin_rmse,
+        cashout_rmse,
+        netto_rmse
+    ],
+
+    "MAPE_Prozent": [
+        cashin_mape,
+        cashout_mape,
+        netto_mape
+    ],
+
+    "WAPE_Prozent": [
+        cashin_wape,
+        cashout_wape,
+        netto_wape
+    ]
+})
+
+
+print("\n======================================")
+print("BACKTEST-KENNZAHLEN")
+print("======================================")
+
+print(
+    backtest_kennzahlen.round(2)
+)
+
+
+# ==================================================
+# 68. BESTEHENDE EXCEL-DATEI ERGÄNZEN
+# ==================================================
+
+excel_path = os.path.join(
+    "Ergebnisse",
+    "Cashflow",
+    "Cashflow_Analyse.xlsx"
+)
+
+
+with pd.ExcelWriter(
+    excel_path,
+    engine="openpyxl",
+    mode="a",
+    if_sheet_exists="replace"
+) as writer:
+
+    backtest.to_excel(
+        writer,
+        sheet_name="Backtest_Jan_Jun_2026"
+    )
+
+    backtest_kennzahlen.to_excel(
+        writer,
+        sheet_name="Backtest_Kennzahlen",
+        index=False
+    )
+
+
+print("\n======================================")
+print("EXCEL-DATEI ERGÄNZT")
+print("======================================")
+
+print(excel_path)
