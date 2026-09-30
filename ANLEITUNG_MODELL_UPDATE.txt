@@ -1,0 +1,177 @@
+CASH-AI – finales Modell- und Forecast-Update
+================================================
+
+DATEIEN ABLAGE
+--------------
+
+Diese Dateien nach C:\CashAI kopieren:
+
+- UPDATE_CASH_AI_MODELS.py
+- START_MODELL_UPDATE.bat
+- START_KOMPLETT_UPDATE.bat
+- requirements_models.txt
+
+Die aufbereiteten CASH-AI-Dateien bleiben in:
+C:\Ergebniss_XGBoost
+
+Benötigt werden insbesondere:
+- 07_Cashflow_Taeglich_Training.csv
+- 08_Cashflow_Taeglich_Validierung.csv
+- 09_Cashflow_Woechentlich_Training.csv
+- 10_Cashflow_Woechentlich_Validierung.csv
+- 15_CASH_AI_Modellspalten.json
+
+
+ERSTER START
+------------
+
+Im VS-Code-Terminal:
+
+cd C:\CashAI
+python -m pip install -r requirements_models.txt
+python UPDATE_CASH_AI_MODELS.py
+
+
+WAS DER CODE MACHT
+------------------
+
+1. Training und bisherige 6-Wochen-Validierung werden für das finale Refit
+   zusammengeführt. Nicht freigegebene/unvollständige Wochen bleiben ausgeschlossen.
+
+2. XGBoost:
+   - finales Cash-In-Modell
+   - finales Cash-Out-Modell
+   - Netto-Cashflow = Cash-In - Cash-Out
+   - rekursiver Wochenforecast ab der ersten Woche nach dem Datenstichtag
+
+3. SARIMA:
+   - finales Cash-In-Modell
+   - finales Cash-Out-Modell
+   - Netto-Cashflow = Cash-In - Cash-Out
+   - verwendet dieselbe wöchentliche Historie wie XGBoost
+
+4. Für beide Modelle werden erzeugt:
+   - tägliche Prognose
+   - wöchentliche Prognose
+   - monatliche Prognose
+
+   Die native Modellprognose ist wöchentlich.
+   Tageswerte werden aus dem Wochenforecast mit historischen
+   Wochentagsanteilen verteilt. Monatswerte werden anschließend
+   aus den Tageswerten summiert.
+
+5. Realisierte Cashflows werden ebenfalls ausgegeben:
+   - täglich
+   - wöchentlich
+   - monatlich
+
+6. Für Power BI entsteht ein stabiler Pfad:
+   C:\CashAI\Ergebnisse\AUTO_UPDATE\PowerBI\PowerBI_Cashflow_Gesamt.csv
+
+   Die Datei enthält:
+   - IST / Realisiert
+   - XGBoost / Prognose
+   - SARIMA / Prognose
+   - täglich / wöchentlich / monatlich
+   - Cash-In / Cash-Out / Netto-Cashflow
+
+
+EINFACHES UPDATE
+----------------
+
+Wenn C:\Ergebniss_XGBoost bereits mit neuen Daten aktualisiert wurde:
+Doppelklick auf:
+
+START_MODELL_UPDATE.bat
+
+
+KOMPLETT-UPDATE
+---------------
+
+Wenn neue Rohdaten in
+C:\CASH_AI_Python_Paket\Eingabedaten
+liegen:
+
+Doppelklick auf:
+
+START_KOMPLETT_UPDATE.bat
+
+Dann den neuen Datenstichtag eingeben, z.B.:
+2026-07-31
+
+Dadurch läuft:
+CASH_AI_Datenaufbereitung.py
+-> finale Trainingsbasis
+-> XGBoost
+-> SARIMA
+-> neue Prognosedateien
+-> neue Power-BI-Datei
+
+
+ERGEBNISSTRUKTUR
+----------------
+
+C:\CashAI\Ergebnisse\AUTO_UPDATE
+|
+|-- 00_Finale_Trainingsbasis_Woechentlich.csv
+|-- Aktualisierungsstatus.json
+|
+|-- IST
+|   |-- Realisierte_Cashflows_Taeglich.csv
+|   |-- Realisierte_Cashflows_Woechentlich.csv
+|   `-- Realisierte_Cashflows_Monatlich.csv
+|
+|-- XGBoost
+|   |-- XGBoost_Prognose_Taeglich.csv
+|   |-- XGBoost_Prognose_Woechentlich.csv
+|   `-- XGBoost_Prognose_Monatlich.csv
+|
+|-- SARIMA
+|   |-- SARIMA_Prognose_Taeglich.csv
+|   |-- SARIMA_Prognose_Woechentlich.csv
+|   `-- SARIMA_Prognose_Monatlich.csv
+|
+|-- Modelle
+|   |-- XGBoost_Cash_In.json
+|   |-- XGBoost_Cash_Out.json
+|   |-- XGBoost_Features.json
+|   |-- SARIMA_Cash_In.pkl
+|   |-- SARIMA_Cash_Out.pkl
+|   `-- sarima_parameters.json
+|
+|-- PowerBI
+|   `-- PowerBI_Cashflow_Gesamt.csv
+|
+`-- Archiv
+    `-- Zeitstempel je Modelllauf
+
+
+POWER BI
+--------
+
+Power BI sollte immer auf diese Datei zeigen:
+
+C:\CashAI\Ergebnisse\AUTO_UPDATE\PowerBI\PowerBI_Cashflow_Gesamt.csv
+
+Nach einem neuen Modelllauf wird genau diese Datei überschrieben.
+In Power BI Desktop danach "Aktualisieren" wählen.
+
+Für eine vollständig automatische Aktualisierung im Power BI Service
+wird zusätzlich ein Gateway oder eine Cloud-Ablage wie OneDrive/SharePoint
+benötigt.
+
+
+WICHTIG
+-------
+
+Die ursprüngliche 6-Wochen-Validierung sollte für die dokumentierte
+Modellauswahl/Modellbewertung archiviert bleiben. Sie wird nur für das
+finale operative Refit wieder in die Trainingshistorie aufgenommen.
+
+Die XGBoost-Konfiguration im Skript verwendet:
+- n_estimators = 300
+- max_depth = 4
+- learning_rate = 0.05
+
+Falls euer final ausgewähltes XGBoost-Modell noch weitere bewusst gesetzte
+Hyperparameter hatte, sollten diese im Block XGB_PARAMS ergänzt werden.

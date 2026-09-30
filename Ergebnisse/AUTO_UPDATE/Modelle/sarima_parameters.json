@@ -1,0 +1,28 @@
+{
+  "Cash_In": {
+    "order": [
+      0,
+      0,
+      1
+    ],
+    "seasonal_order": [
+      1,
+      0,
+      0,
+      52
+    ]
+  },
+  "Cash_Out": {
+    "order": [
+      1,
+      0,
+      0
+    ],
+    "seasonal_order": [
+      1,
+      0,
+      1,
+      52
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+﻿lieferanten_id,lieferantenname,kategorie,zahlungsziel_tage,skontofrist_tage,skontosatz
+L001,AgroForce Maschinenbau,Neumaschinen,60,14,2.5
+L002,TerraLine Landtechnik,Neumaschinen,45,14,2.2
+L003,NordAgrar Maschinen,Neumaschinen,45,14,2.4
+L004,AlpinTrac Landtechnik,Neumaschinen,30,14,2.5
+L005,FeldTech Baumaschinen,Neumaschinen,30,14,2.4
+L006,GrazerLandtechnik Vertrieb,Neumaschinen,45,14,2.1
+L007,KommunalPro Fahrzeugtechnik,Neumaschinen,30,14,2.6
+L008,ErnteProfi Handelsges.,Neumaschinen,60,14,2.1
+L009,GruenTech Ersatzteile,Ersatzteile,60,10,2.4
+L010,SteirerErsatzteile Zentrallager,Ersatzteile,45,14,2.6
+L011,RaikaTech Antriebstechnik,Ersatzteile,60,14,2.7
+L012,MurtalTechnik Zubehoer,Ersatzteile,30,10,2.3
+L013,HartbergErsatzteile Grosshandel,Ersatzteile,30,10,2.5
+L014,TerraParts Distribution,Ersatzteile,30,10,2.7
+L015,AgriElektronik Steiermark,Ersatzteile,30,10,2.6
+L016,LandmaschinenCenter Ost,Ersatzteile,60,10,2.4
+L017,WeizErsatzteile Lager,Ersatzteile,30,14,2.1
+L018,SuedOstAgrar Grosshandel,Ersatzteile,45,10,2.4

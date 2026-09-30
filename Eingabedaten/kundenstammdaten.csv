@@ -1,0 +1,851 @@
+﻿kunden_id,kundenname,segment,region,kundenklasse,kunde_seit,zahlungsziel_tage,skonto_konditionen,bonitaetsklasse
+K00001,Reiter Agrar GmbH,B2B,Gleisdorf,Mittel,2025-04-10,14,Nein,B
+K00002,Steiner Bauhof,B2B,Feldbach,Mittel,2026-03-29,14,Nein,C
+K00003,Eder Landwirtschaft,B2B,Hartberg,Mittel,2026-03-17,14,Nein,B
+K00004,Schmid Landtechnik,B2B,Suedoststeiermark,Klein,2025-04-18,14,Nein,B
+K00005,Berger Gemeinde,B2B,Feldbach,Klein,2025-11-18,21,Nein,A
+K00006,Fischer Bauhof,B2B,Gleisdorf,Mittel,2024-02-15,14,Nein,B
+K00007,Wagner e.U.,B2B,Graz-Umgebung,Mittel,2025-10-20,14,Nein,A
+K00008,Fischer Agrar GmbH,B2B,Feldbach,Gross,2024-09-26,30,Nein,B
+K00009,Eder e.U.,B2C,Leibnitz,Klein,2026-04-07,21,Ja,A
+K00010,Hofer Betriebs-GmbH,B2B,Hartberg,Klein,2023-10-09,14,Ja,A
+K00011,Fischer Landtechnik,B2B,Suedoststeiermark,Klein,2023-06-13,14,Nein,C
+K00012,Schmid e.U.,B2B,Leibnitz,Klein,2022-12-29,14,Nein,A
+K00013,Huber Bauhof,B2B,Suedoststeiermark,Mittel,2024-05-31,14,Nein,C
+K00014,Fuchs Agrar GmbH,B2B,Feldbach,Klein,2025-04-18,30,Ja,A
+K00015,Schwarz Agrar GmbH,B2B,Gleisdorf,Mittel,2024-10-23,30,Nein,A
+K00016,Lang e.U.,B2B,Leibnitz,Klein,2023-09-14,21,Nein,B
+K00017,Schwarz Landwirtschaft,B2B,Hartberg,Klein,2026-02-06,21,Nein,A
+K00018,Schwarz Agrar GmbH,B2C,Hartberg,Klein,2025-01-20,30,Nein,B
+K00019,Eder Betriebs-GmbH,B2B,Feldbach,Klein,2026-06-17,21,Nein,A
+K00020,Gruber e.U.,B2B,Graz-Umgebung,Klein,2025-04-11,14,Nein,A
+K00021,Huber Betriebs-GmbH,B2B,Leibnitz,Mittel,2025-06-10,14,Nein,C
+K00022,Mayr Landtechnik,B2B,Weiz,Klein,2026-03-02,21,Ja,A
+K00023,Mayr KG,B2B,Leibnitz,Mittel,2026-01-08,21,Ja,A
+K00024,Maier Landtechnik,B2B,Gleisdorf,Mittel,2025-02-06,14,Nein,C
+K00025,Huber Betriebs-GmbH,B2B,Gleisdorf,Klein,2024-06-15,14,Nein,B
+K00026,Mayr Landwirtschaft,B2B,Gleisdorf,Klein,2025-03-25,14,Nein,A
+K00027,Berger Agrar GmbH,B2B,Weiz,Klein,2025-08-01,14,Nein,C
+K00028,Eder Landtechnik,B2B,Feldbach,Klein,2026-01-06,21,Nein,B
+K00029,Reiter Gemeinde,B2B,Suedoststeiermark,Klein,2025-01-23,21,Nein,A
+K00030,Pichler Landwirtschaft,B2B,Suedoststeiermark,Klein,2023-08-12,21,Nein,C
+K00031,Berger Agrar GmbH,B2C,Hartberg,Klein,2025-07-29,14,Nein,B
+K00032,Fuchs Betriebs-GmbH,B2B,Weiz,Mittel,2025-09-11,14,Nein,A
+K00033,Schwarz Betriebs-GmbH,B2B,Feldbach,Klein,2022-08-25,30,Nein,A
+K00034,Wagner KG,B2B,Graz-Umgebung,Klein,2026-01-28,21,Nein,C
+K00035,Gruber Agrar GmbH,B2B,Suedoststeiermark,Klein,2025-03-10,14,Nein,A
+K00036,Fuchs Landwirtschaft,B2B,Graz-Umgebung,Klein,2026-02-17,14,Ja,A
+K00037,Eder Betriebs-GmbH,B2B,Hartberg,Klein,2025-11-27,30,Nein,A
+K00038,Schwarz Agrar GmbH,B2B,Feldbach,Klein,2023-10-01,30,Nein,C
+K00039,Hofer Agrar GmbH,B2C,Feldbach,Klein,2024-01-15,30,Nein,B
+K00040,Pichler e.U.,B2C,Feldbach,Klein,2025-01-14,21,Nein,A
+K00041,Eder Betriebs-GmbH,B2C,Feldbach,Mittel,2026-01-25,21,Nein,C
+K00042,Schwarz Landwirtschaft,B2C,Feldbach,Mittel,2024-09-05,21,Nein,B
+K00043,Leitner Landtechnik,B2B,Graz-Umgebung,Klein,2025-10-20,14,Nein,A
+K00044,Maier Landtechnik,B2B,Feldbach,Klein,2024-12-16,21,Nein,A
+K00045,Lang Landwirtschaft,B2B,Feldbach,Klein,2025-09-04,21,Ja,A
+K00046,Lang Bauhof,B2B,Suedoststeiermark,Mittel,2025-10-28,14,Nein,A
+K00047,Schwarz Betriebs-GmbH,B2B,Weiz,Klein,2024-05-21,30,Nein,A
+K00048,Berger KG,B2B,Leibnitz,Klein,2025-11-04,21,Ja,A
+K00049,Schwarz KG,B2B,Weiz,Klein,2024-01-01,14,Nein,A
+K00050,Fischer e.U.,B2B,Suedoststeiermark,Klein,2023-03-15,14,Nein,B
+K00051,Steiner Agrar GmbH,B2B,Weiz,Klein,2025-05-17,30,Ja,A
+K00052,Leitner Bauhof,B2B,Gleisdorf,Klein,2024-08-31,30,Nein,B
+K00053,Leitner Betriebs-GmbH,B2B,Leibnitz,Klein,2024-08-09,21,Nein,A
+K00054,Eder Agrar GmbH,B2B,Gleisdorf,Mittel,2026-05-31,30,Nein,B
+K00055,Lang Landtechnik,B2B,Hartberg,Gross,2024-05-28,21,Nein,A
+K00056,Weber e.U.,B2B,Gleisdorf,Klein,2025-11-09,30,Ja,A
+K00057,Hofer Bauhof,B2B,Feldbach,Klein,2026-03-18,30,Nein,A
+K00058,Weber Gemeinde,B2B,Leibnitz,Klein,2024-11-18,21,Nein,C
+K00059,Lang KG,B2B,Hartberg,Klein,2022-08-01,30,Ja,A
+K00060,Weber Gemeinde,B2B,Feldbach,Klein,2024-12-31,21,Nein,A
+K00061,Leitner Gemeinde,B2B,Hartberg,Klein,2025-01-31,30,Ja,A
+K00062,Pichler Landtechnik,B2B,Suedoststeiermark,Mittel,2026-05-18,14,Nein,A
+K00063,Winkler KG,B2C,Hartberg,Mittel,2025-03-15,30,Nein,C
+K00064,Schmid KG,B2B,Leibnitz,Gross,2026-06-05,21,Nein,A
+K00065,Wolf Bauhof,B2B,Suedoststeiermark,Mittel,2026-03-28,14,Nein,A
+K00066,Wagner Bauhof,B2B,Feldbach,Mittel,2025-07-27,30,Ja,A
+K00067,Leitner Landtechnik,B2B,Leibnitz,Klein,2026-02-13,21,Nein,C
+K00068,Maier Betriebs-GmbH,B2B,Hartberg,Klein,2025-09-03,14,Nein,A
+K00069,Weber KG,B2B,Feldbach,Klein,2025-06-10,14,Nein,C
+K00070,Schmid Landwirtschaft,B2B,Leibnitz,Klein,2024-07-09,30,Nein,B
+K00071,Wagner Agrar GmbH,B2B,Suedoststeiermark,Klein,2025-07-05,21,Ja,A
+K00072,Weber e.U.,B2B,Hartberg,Mittel,2025-05-26,14,Ja,A
+K00073,Gruber Landtechnik,B2B,Weiz,Mittel,2025-01-10,21,Ja,A
+K00074,Weber Landtechnik,B2B,Hartberg,Klein,2026-05-26,14,Ja,A
+K00075,Winkler Agrar GmbH,B2B,Gleisdorf,Klein,2025-08-24,21,Ja,A
+K00076,Eder Landwirtschaft,B2B,Weiz,Klein,2026-03-16,30,Nein,C
+K00077,Fischer Agrar GmbH,B2B,Weiz,Mittel,2026-05-04,21,Nein,A
+K00078,Steiner Betriebs-GmbH,B2B,Weiz,Klein,2025-03-29,30,Nein,A
+K00079,Gruber Landwirtschaft,B2B,Feldbach,Mittel,2024-05-10,21,Nein,B
+K00080,Wagner Gemeinde,B2B,Leibnitz,Klein,2026-04-13,30,Nein,B
+K00081,Wolf Agrar GmbH,B2C,Weiz,Mittel,2025-01-15,14,Nein,B
+K00082,Reiter Betriebs-GmbH,B2B,Leibnitz,Klein,2025-03-23,14,Nein,A
+K00083,Winkler Betriebs-GmbH,B2B,Feldbach,Klein,2022-12-15,14,Nein,B
+K00084,Eder Landtechnik,B2B,Gleisdorf,Klein,2025-02-08,21,Nein,A
+K00085,Hofer Bauhof,B2B,Gleisdorf,Klein,2023-11-21,21,Nein,A
+K00086,Lang Agrar GmbH,B2B,Feldbach,Klein,2025-01-09,30,Nein,A
+K00087,Wagner Betriebs-GmbH,B2B,Hartberg,Mittel,2026-04-27,14,Nein,B
+K00088,Huber Gemeinde,B2B,Gleisdorf,Klein,2025-08-06,14,Nein,B
+K00089,Maier Landwirtschaft,B2B,Leibnitz,Klein,2025-11-01,21,Nein,A
+K00090,Winkler Bauhof,B2B,Hartberg,Klein,2024-01-19,30,Nein,C
+K00091,Fischer KG,B2C,Suedoststeiermark,Klein,2024-12-02,14,Ja,A
+K00092,Fischer Landtechnik,B2B,Gleisdorf,Mittel,2023-06-11,14,Ja,A
+K00093,Fischer KG,B2C,Leibnitz,Mittel,2024-01-09,14,Nein,C
+K00094,Reiter e.U.,B2B,Gleisdorf,Klein,2024-09-23,21,Ja,A
+K00095,Weber e.U.,B2B,Gleisdorf,Klein,2025-07-06,14,Nein,A
+K00096,Wagner Landwirtschaft,B2B,Weiz,Klein,2024-05-03,14,Ja,A
+K00097,Schmid Landwirtschaft,B2B,Graz-Umgebung,Klein,2022-08-10,21,Nein,A
+K00098,Steiner Agrar GmbH,B2B,Gleisdorf,Klein,2023-11-17,14,Ja,A
+K00099,Hofer e.U.,B2B,Gleisdorf,Klein,2026-06-29,21,Nein,A
+K00100,Hofer Landtechnik,B2C,Weiz,Mittel,2024-10-11,14,Nein,A
+K00101,Weber Agrar GmbH,B2B,Leibnitz,Klein,2026-03-18,30,Ja,A
+K00102,Maier Landtechnik,B2B,Feldbach,Gross,2026-01-09,21,Ja,A
+K00103,Leitner Agrar GmbH,B2B,Gleisdorf,Mittel,2024-07-31,14,Nein,B
+K00104,Gruber Betriebs-GmbH,B2B,Gleisdorf,Klein,2025-03-24,14,Nein,B
+K00105,Leitner Agrar GmbH,B2B,Graz-Umgebung,Mittel,2026-02-01,21,Nein,A
+K00106,Leitner Gemeinde,B2B,Gleisdorf,Klein,2025-03-08,30,Nein,A
+K00107,Wolf Landtechnik,B2C,Gleisdorf,Klein,2025-11-04,14,Nein,A
+K00108,Huber Gemeinde,B2B,Graz-Umgebung,Klein,2024-04-28,14,Ja,A
+K00109,Wagner Landwirtschaft,B2B,Gleisdorf,Klein,2025-12-10,14,Nein,B
+K00110,Schmid e.U.,B2B,Feldbach,Mittel,2023-10-17,21,Nein,B
+K00111,Fuchs KG,B2B,Feldbach,Klein,2024-09-07,30,Ja,A
+K00112,Huber Landwirtschaft,B2C,Feldbach,Klein,2024-03-29,21,Nein,B
+K00113,Schmid e.U.,B2B,Feldbach,Klein,2026-05-18,14,Nein,A
+K00114,Wolf Landwirtschaft,B2B,Gleisdorf,Klein,2022-12-02,30,Ja,A
+K00115,Winkler Agrar GmbH,B2B,Leibnitz,Klein,2026-02-02,30,Ja,A
+K00116,Gruber e.U.,B2B,Leibnitz,Klein,2025-03-23,14,Ja,A
+K00117,Mayr Agrar GmbH,B2B,Feldbach,Mittel,2025-10-21,14,Ja,A
+K00118,Wolf Landtechnik,B2B,Weiz,Mittel,2026-05-13,21,Ja,A
+K00119,Maier KG,B2B,Feldbach,Klein,2021-10-31,30,Nein,C
+K00120,Fuchs Agrar GmbH,B2B,Graz-Umgebung,Klein,2026-02-27,21,Ja,A
+K00121,Schwarz Landwirtschaft,B2C,Feldbach,Klein,2024-03-02,21,Nein,B
+K00122,Eder Bauhof,B2B,Weiz,Klein,2024-10-22,30,Nein,A
+K00123,Weber e.U.,B2B,Hartberg,Klein,2024-07-24,14,Nein,A
+K00124,Reiter KG,B2B,Weiz,Klein,2026-06-15,14,Nein,A
+K00125,Steiner Betriebs-GmbH,B2C,Gleisdorf,Klein,2025-11-29,14,Ja,A
+K00126,Maier Gemeinde,B2B,Leibnitz,Klein,2025-11-23,30,Ja,A
+K00127,Lang KG,B2B,Hartberg,Klein,2025-10-24,21,Ja,A
+K00128,Maier Agrar GmbH,B2B,Suedoststeiermark,Klein,2025-06-03,14,Nein,C
+K00129,Wagner Bauhof,B2B,Gleisdorf,Klein,2025-07-06,14,Nein,A
+K00130,Maier Gemeinde,B2B,Leibnitz,Mittel,2023-01-25,30,Nein,A
+K00131,Schmid Bauhof,B2B,Suedoststeiermark,Klein,2025-06-08,30,Nein,A
+K00132,Pichler Agrar GmbH,B2B,Graz-Umgebung,Mittel,2025-05-14,21,Nein,A
+K00133,Mayr e.U.,B2C,Hartberg,Klein,2026-05-24,14,Nein,C
+K00134,Wolf Agrar GmbH,B2B,Hartberg,Mittel,2024-03-27,30,Nein,C
+K00135,Leitner KG,B2B,Hartberg,Mittel,2025-04-12,30,Ja,A
+K00136,Wolf Landwirtschaft,B2B,Hartberg,Klein,2025-08-05,21,Nein,A
+K00137,Wolf Landwirtschaft,B2B,Weiz,Gross,2024-07-02,21,Nein,A
+K00138,Steiner KG,B2B,Graz-Umgebung,Klein,2025-04-11,30,Ja,A
+K00139,Steiner Betriebs-GmbH,B2B,Graz-Umgebung,Mittel,2024-11-02,30,Nein,C
+K00140,Steiner Landtechnik,B2C,Gleisdorf,Klein,2026-02-08,21,Nein,A
+K00141,Huber Betriebs-GmbH,B2B,Weiz,Klein,2025-06-10,21,Ja,A
+K00142,Fuchs Gemeinde,B2B,Suedoststeiermark,Klein,2025-01-31,21,Nein,A
+K00143,Maier Agrar GmbH,B2B,Graz-Umgebung,Mittel,2026-05-19,30,Nein,B
+K00144,Maier e.U.,B2B,Feldbach,Klein,2025-05-20,21,Ja,A
+K00145,Berger Landtechnik,B2B,Gleisdorf,Klein,2025-05-04,14,Ja,A
+K00146,Fuchs Betriebs-GmbH,B2B,Suedoststeiermark,Klein,2024-07-08,14,Ja,A
+K00147,Schwarz Betriebs-GmbH,B2B,Hartberg,Klein,2026-02-13,30,Ja,A
+K00148,Fuchs Agrar GmbH,B2B,Gleisdorf,Klein,2025-02-06,30,Nein,B
+K00149,Lang Gemeinde,B2C,Graz-Umgebung,Klein,2023-09-23,30,Nein,C
+K00150,Lang Agrar GmbH,B2B,Graz-Umgebung,Klein,2023-10-31,21,Nein,A
+K00151,Maier Betriebs-GmbH,B2B,Suedoststeiermark,Mittel,2024-01-11,30,Nein,A
+K00152,Schwarz Betriebs-GmbH,B2B,Leibnitz,Mittel,2024-05-19,30,Nein,A
+K00153,Winkler e.U.,B2C,Hartberg,Klein,2026-05-13,14,Nein,A
+K00154,Schwarz Gemeinde,B2B,Hartberg,Gross,2024-09-27,30,Nein,A
+K00155,Wolf e.U.,B2B,Gleisdorf,Klein,2024-09-28,30,Ja,A
+K00156,Wolf Bauhof,B2B,Weiz,Gross,2025-03-11,30,Nein,C
+K00157,Hofer Gemeinde,B2B,Gleisdorf,Klein,2025-07-01,21,Nein,A
+K00158,Fischer Bauhof,B2B,Weiz,Klein,2025-02-26,21,Nein,C
+K00159,Leitner Gemeinde,B2B,Gleisdorf,Mittel,2026-06-19,21,Nein,A
+K00160,Winkler Agrar GmbH,B2C,Leibnitz,Klein,2026-01-24,14,Ja,A
+K00161,Berger KG,B2B,Hartberg,Klein,2023-06-19,30,Nein,B
+K00162,Weber Bauhof,B2B,Hartberg,Mittel,2023-06-20,14,Ja,A
+K00163,Weber Landtechnik,B2B,Feldbach,Klein,2024-11-15,30,Nein,B
+K00164,Schwarz Agrar GmbH,B2B,Feldbach,Klein,2025-06-07,14,Nein,A
+K00165,Leitner Agrar GmbH,B2B,Suedoststeiermark,Klein,2025-06-22,21,Nein,B
+K00166,Fischer Landtechnik,B2B,Gleisdorf,Klein,2023-05-22,30,Nein,A
+K00167,Fischer e.U.,B2B,Hartberg,Mittel,2026-05-18,14,Ja,A
+K00168,Winkler Gemeinde,B2B,Leibnitz,Klein,2025-11-05,14,Nein,B
+K00169,Schmid Betriebs-GmbH,B2B,Gleisdorf,Klein,2024-12-27,30,Nein,B
+K00170,Fuchs Landtechnik,B2B,Feldbach,Klein,2024-10-01,14,Nein,A
+K00171,Huber Agrar GmbH,B2B,Hartberg,Klein,2024-09-02,14,Ja,A
+K00172,Gruber Agrar GmbH,B2B,Feldbach,Mittel,2024-09-13,21,Ja,A
+K00173,Wagner Landwirtschaft,B2B,Weiz,Klein,2024-09-10,30,Nein,B
+K00174,Huber Bauhof,B2B,Hartberg,Mittel,2025-05-28,21,Nein,A
+K00175,Wagner Landtechnik,B2B,Feldbach,Klein,2026-05-08,21,Nein,A
+K00176,Huber KG,B2B,Feldbach,Klein,2026-02-03,30,Nein,B
+K00177,Pichler Gemeinde,B2B,Weiz,Klein,2025-07-07,21,Nein,B
+K00178,Reiter Bauhof,B2B,Feldbach,Mittel,2023-09-02,21,Nein,B
+K00179,Reiter Landtechnik,B2B,Suedoststeiermark,Klein,2025-10-23,21,Ja,A
+K00180,Schwarz Bauhof,B2B,Feldbach,Klein,2023-05-13,14,Nein,A
+K00181,Berger KG,B2B,Weiz,Klein,2025-11-15,14,Nein,A
+K00182,Weber Gemeinde,B2B,Gleisdorf,Klein,2025-06-18,21,Ja,A
+K00183,Fischer Landwirtschaft,B2C,Gleisdorf,Mittel,2026-04-15,14,Ja,A
+K00184,Hofer Gemeinde,B2B,Feldbach,Gross,2025-03-31,30,Nein,A
+K00185,Fischer Landwirtschaft,B2B,Suedoststeiermark,Klein,2026-06-29,14,Ja,A
+K00186,Wolf Landwirtschaft,B2B,Suedoststeiermark,Klein,2026-02-17,21,Nein,C
+K00187,Berger Gemeinde,B2C,Feldbach,Mittel,2026-02-01,14,Ja,A
+K00188,Leitner Bauhof,B2B,Feldbach,Klein,2026-01-27,21,Ja,A
+K00189,Fischer Agrar GmbH,B2B,Suedoststeiermark,Mittel,2025-03-04,30,Ja,A
+K00190,Leitner Landwirtschaft,B2B,Gleisdorf,Klein,2024-04-17,21,Nein,B
+K00191,Mayr KG,B2B,Feldbach,Klein,2026-04-11,14,Nein,B
+K00192,Reiter Agrar GmbH,B2C,Feldbach,Klein,2022-06-22,14,Nein,C
+K00193,Wagner Landwirtschaft,B2B,Weiz,Klein,2022-10-19,30,Ja,A
+K00194,Maier Gemeinde,B2B,Leibnitz,Klein,2025-11-29,14,Nein,B
+K00195,Wagner Bauhof,B2B,Weiz,Klein,2025-07-31,30,Nein,C
+K00196,Leitner Landtechnik,B2B,Graz-Umgebung,Gross,2026-04-22,21,Nein,B
+K00197,Lang Landtechnik,B2B,Gleisdorf,Klein,2026-06-05,14,Nein,A
+K00198,Maier Betriebs-GmbH,B2B,Hartberg,Klein,2026-05-28,30,Nein,C
+K00199,Winkler Agrar GmbH,B2B,Gleisdorf,Klein,2023-02-12,21,Nein,A
+K00200,Leitner Bauhof,B2C,Hartberg,Mittel,2025-12-18,14,Nein,A
+K00201,Eder Bauhof,B2B,Hartberg,Klein,2025-08-29,30,Nein,B
+K00202,Fuchs Betriebs-GmbH,B2B,Feldbach,Klein,2024-10-29,14,Ja,A
+K00203,Huber Betriebs-GmbH,B2B,Hartberg,Klein,2026-06-22,21,Nein,B
+K00204,Schmid Betriebs-GmbH,B2B,Leibnitz,Klein,2026-03-15,21,Nein,A
+K00205,Mayr Landwirtschaft,B2B,Feldbach,Klein,2025-08-15,21,Ja,A
+K00206,Winkler Betriebs-GmbH,B2B,Gleisdorf,Mittel,2025-06-26,30,Nein,A
+K00207,Maier Landwirtschaft,B2B,Weiz,Klein,2024-11-05,14,Nein,C
+K00208,Winkler Bauhof,B2C,Weiz,Klein,2023-04-21,30,Nein,A
+K00209,Eder Betriebs-GmbH,B2C,Leibnitz,Klein,2025-06-11,21,Nein,B
+K00210,Winkler Gemeinde,B2B,Suedoststeiermark,Gross,2026-06-09,21,Nein,A
+K00211,Maier Landtechnik,B2C,Leibnitz,Klein,2023-11-14,30,Nein,A
+K00212,Fuchs Bauhof,B2B,Feldbach,Mittel,2026-06-12,30,Nein,A
+K00213,Reiter KG,B2B,Gleisdorf,Klein,2023-07-07,21,Nein,A
+K00214,Schwarz Betriebs-GmbH,B2B,Weiz,Mittel,2025-10-21,21,Nein,B
+K00215,Fuchs Landwirtschaft,B2B,Hartberg,Klein,2025-04-27,21,Nein,A
+K00216,Reiter Gemeinde,B2B,Feldbach,Klein,2024-04-28,21,Ja,A
+K00217,Berger Landwirtschaft,B2B,Hartberg,Klein,2026-02-24,21,Nein,A
+K00218,Wolf Agrar GmbH,B2B,Gleisdorf,Klein,2026-02-05,30,Nein,A
+K00219,Schmid Landwirtschaft,B2B,Gleisdorf,Klein,2026-04-02,14,Nein,A
+K00220,Huber KG,B2B,Feldbach,Klein,2023-06-04,30,Ja,A
+K00221,Lang Landwirtschaft,B2B,Suedoststeiermark,Mittel,2025-10-27,14,Ja,A
+K00222,Steiner e.U.,B2B,Graz-Umgebung,Klein,2024-05-20,30,Nein,B
+K00223,Lang e.U.,B2B,Feldbach,Klein,2024-11-04,14,Ja,A
+K00224,Eder Gemeinde,B2B,Graz-Umgebung,Mittel,2026-04-11,14,Nein,A
+K00225,Reiter Betriebs-GmbH,B2B,Feldbach,Klein,2025-01-24,30,Nein,A
+K00226,Lang Bauhof,B2B,Graz-Umgebung,Mittel,2025-11-08,30,Nein,A
+K00227,Gruber Gemeinde,B2B,Graz-Umgebung,Mittel,2025-06-19,30,Ja,A
+K00228,Eder e.U.,B2B,Feldbach,Klein,2026-05-15,30,Nein,A
+K00229,Schwarz Betriebs-GmbH,B2B,Leibnitz,Klein,2025-12-31,14,Nein,B
+K00230,Wagner Bauhof,B2B,Graz-Umgebung,Klein,2026-01-13,30,Nein,B
+K00231,Fuchs Bauhof,B2B,Suedoststeiermark,Mittel,2023-08-04,21,Nein,B
+K00232,Fuchs e.U.,B2B,Graz-Umgebung,Klein,2026-03-07,21,Nein,B
+K00233,Lang Betriebs-GmbH,B2B,Gleisdorf,Mittel,2025-02-15,21,Nein,A
+K00234,Wolf Landwirtschaft,B2B,Feldbach,Gross,2025-08-17,21,Nein,A
+K00235,Gruber Landwirtschaft,B2C,Suedoststeiermark,Klein,2023-04-08,21,Nein,B
+K00236,Leitner Landwirtschaft,B2B,Weiz,Gross,2026-05-20,30,Nein,A
+K00237,Berger Landwirtschaft,B2B,Weiz,Klein,2024-08-05,14,Nein,A
+K00238,Schwarz Agrar GmbH,B2B,Gleisdorf,Klein,2023-08-19,30,Nein,B
+K00239,Weber Bauhof,B2B,Weiz,Mittel,2025-03-30,21,Nein,A
+K00240,Lang Bauhof,B2C,Feldbach,Klein,2025-08-10,14,Nein,B
+K00241,Schwarz Bauhof,B2C,Leibnitz,Klein,2024-03-24,21,Nein,C
+K00242,Schmid Landtechnik,B2B,Feldbach,Mittel,2025-07-29,14,Ja,A
+K00243,Maier Landtechnik,B2B,Leibnitz,Mittel,2025-11-04,14,Ja,A
+K00244,Berger Landwirtschaft,B2B,Suedoststeiermark,Klein,2024-04-24,21,Nein,A
+K00245,Fischer Gemeinde,B2B,Gleisdorf,Mittel,2025-05-12,14,Nein,C
+K00246,Mayr Betriebs-GmbH,B2B,Gleisdorf,Klein,2023-04-20,14,Nein,A
+K00247,Schwarz Landtechnik,B2B,Hartberg,Klein,2024-02-14,30,Nein,B
+K00248,Huber KG,B2B,Graz-Umgebung,Klein,2024-08-08,14,Nein,B
+K00249,Weber Bauhof,B2B,Leibnitz,Mittel,2022-12-28,30,Nein,A
+K00250,Maier Agrar GmbH,B2B,Hartberg,Mittel,2025-11-12,30,Nein,C
+K00251,Gruber Gemeinde,B2B,Feldbach,Mittel,2026-05-15,14,Ja,A
+K00252,Eder Landwirtschaft,B2B,Feldbach,Klein,2026-03-10,21,Nein,C
+K00253,Lang Landwirtschaft,B2B,Gleisdorf,Klein,2024-09-12,14,Ja,A
+K00254,Schwarz Landwirtschaft,B2B,Graz-Umgebung,Klein,2025-09-18,21,Nein,B
+K00255,Weber Agrar GmbH,B2B,Leibnitz,Mittel,2025-10-07,14,Nein,C
+K00256,Winkler Gemeinde,B2C,Feldbach,Klein,2023-04-03,30,Nein,B
+K00257,Wolf Betriebs-GmbH,B2C,Suedoststeiermark,Klein,2022-09-11,14,Nein,A
+K00258,Weber Landwirtschaft,B2B,Hartberg,Klein,2025-02-06,21,Nein,A
+K00259,Maier KG,B2B,Suedoststeiermark,Klein,2023-02-14,14,Ja,A
+K00260,Leitner Landtechnik,B2B,Hartberg,Klein,2024-11-28,14,Ja,A
+K00261,Winkler e.U.,B2C,Weiz,Klein,2025-01-21,21,Nein,B
+K00262,Schwarz Landtechnik,B2B,Graz-Umgebung,Klein,2026-01-23,21,Nein,B
+K00263,Mayr Landtechnik,B2B,Hartberg,Gross,2025-09-10,21,Nein,A
+K00264,Weber e.U.,B2B,Leibnitz,Klein,2024-11-25,14,Ja,A
+K00265,Schwarz Landtechnik,B2B,Graz-Umgebung,Mittel,2026-03-04,14,Nein,A
+K00266,Wolf KG,B2B,Feldbach,Klein,2026-04-03,21,Nein,C
+K00267,Pichler Betriebs-GmbH,B2B,Feldbach,Klein,2025-04-13,21,Nein,B
+K00268,Fuchs e.U.,B2B,Weiz,Klein,2023-08-16,30,Ja,A
+K00269,Maier Landwirtschaft,B2B,Hartberg,Klein,2025-04-27,30,Nein,B
+K00270,Eder Bauhof,B2B,Feldbach,Klein,2024-01-18,30,Ja,A
+K00271,Reiter Betriebs-GmbH,B2B,Gleisdorf,Mittel,2024-08-17,14,Nein,B
+K00272,Wolf Betriebs-GmbH,B2B,Leibnitz,Klein,2025-06-16,21,Ja,A
+K00273,Fuchs KG,B2B,Hartberg,Klein,2025-10-21,30,Nein,B
+K00274,Fischer Landtechnik,B2B,Hartberg,Klein,2026-06-06,14,Nein,C
+K00275,Wagner Landwirtschaft,B2B,Suedoststeiermark,Klein,2025-01-30,21,Ja,A
+K00276,Weber Betriebs-GmbH,B2B,Gleisdorf,Gross,2024-01-03,30,Nein,A
+K00277,Lang Betriebs-GmbH,B2B,Suedoststeiermark,Klein,2024-07-30,14,Nein,A
+K00278,Maier KG,B2B,Gleisdorf,Klein,2025-09-18,30,Nein,B
+K00279,Schmid e.U.,B2B,Graz-Umgebung,Klein,2024-05-21,14,Nein,B
+K00280,Winkler Agrar GmbH,B2B,Weiz,Klein,2026-03-25,30,Ja,A
+K00281,Schmid Landtechnik,B2B,Feldbach,Klein,2023-03-20,14,Nein,C
+K00282,Huber e.U.,B2B,Suedoststeiermark,Klein,2025-05-12,14,Nein,A
+K00283,Reiter Landwirtschaft,B2B,Gleisdorf,Klein,2022-05-25,14,Nein,A
+K00284,Weber Bauhof,B2B,Feldbach,Klein,2024-10-24,14,Nein,A
+K00285,Reiter Landwirtschaft,B2B,Feldbach,Klein,2026-06-15,21,Nein,B
+K00286,Hofer KG,B2B,Leibnitz,Mittel,2023-04-22,14,Ja,A
+K00287,Gruber Bauhof,B2B,Feldbach,Klein,2023-12-06,21,Nein,A
+K00288,Wolf Landwirtschaft,B2B,Hartberg,Klein,2024-10-06,30,Nein,A
+K00289,Pichler Gemeinde,B2B,Feldbach,Klein,2022-12-08,21,Nein,A
+K00290,Fischer Bauhof,B2B,Gleisdorf,Mittel,2024-07-24,14,Nein,B
+K00291,Hofer Landtechnik,B2B,Gleisdorf,Klein,2023-07-04,21,Ja,A
+K00292,Hofer Landtechnik,B2B,Gleisdorf,Klein,2024-03-31,30,Ja,A
+K00293,Schwarz Landwirtschaft,B2B,Hartberg,Klein,2022-06-30,21,Nein,A
+K00294,Pichler Landwirtschaft,B2B,Feldbach,Mittel,2025-03-04,14,Nein,A
+K00295,Schwarz Gemeinde,B2B,Weiz,Gross,2025-07-02,30,Nein,A
+K00296,Huber Landwirtschaft,B2B,Hartberg,Mittel,2023-03-25,21,Nein,A
+K00297,Leitner Agrar GmbH,B2B,Weiz,Mittel,2025-06-15,14,Nein,B
+K00298,Hofer e.U.,B2B,Feldbach,Klein,2024-12-18,14,Nein,A
+K00299,Berger Agrar GmbH,B2B,Feldbach,Klein,2026-06-28,30,Ja,A
+K00300,Reiter Bauhof,B2B,Hartberg,Klein,2024-11-01,14,Nein,A
+K00301,Reiter Bauhof,B2B,Gleisdorf,Klein,2025-12-04,14,Nein,C
+K00302,Fischer Bauhof,B2B,Gleisdorf,Klein,2024-05-13,14,Ja,A
+K00303,Lang Landwirtschaft,B2B,Suedoststeiermark,Klein,2025-04-20,21,Ja,A
+K00304,Fuchs e.U.,B2B,Hartberg,Klein,2026-04-23,21,Ja,A
+K00305,Mayr Bauhof,B2B,Gleisdorf,Klein,2025-09-27,14,Ja,A
+K00306,Reiter Betriebs-GmbH,B2B,Weiz,Klein,2025-10-20,21,Nein,A
+K00307,Schwarz Gemeinde,B2B,Feldbach,Klein,2026-02-09,21,Ja,A
+K00308,Schwarz Landtechnik,B2B,Gleisdorf,Klein,2024-08-23,14,Nein,A
+K00309,Reiter Betriebs-GmbH,B2B,Hartberg,Klein,2025-12-08,30,Ja,A
+K00310,Berger Betriebs-GmbH,B2B,Gleisdorf,Klein,2026-03-23,14,Ja,A
+K00311,Leitner Gemeinde,B2B,Feldbach,Klein,2023-02-18,14,Nein,B
+K00312,Berger Agrar GmbH,B2B,Leibnitz,Klein,2025-11-18,30,Ja,A
+K00313,Gruber Bauhof,B2B,Graz-Umgebung,Mittel,2022-08-18,30,Nein,B
+K00314,Winkler Landtechnik,B2C,Feldbach,Klein,2023-01-18,14,Nein,A
+K00315,Fischer Landwirtschaft,B2B,Weiz,Klein,2025-02-22,30,Ja,A
+K00316,Fischer Gemeinde,B2B,Leibnitz,Klein,2025-12-10,21,Ja,A
+K00317,Reiter e.U.,B2B,Hartberg,Klein,2022-03-23,14,Nein,A
+K00318,Mayr Agrar GmbH,B2B,Leibnitz,Klein,2025-12-27,30,Nein,A
+K00319,Fuchs KG,B2B,Weiz,Klein,2026-04-02,30,Nein,B
+K00320,Leitner Gemeinde,B2C,Graz-Umgebung,Klein,2025-08-09,14,Nein,B
+K00321,Fischer Landtechnik,B2B,Graz-Umgebung,Klein,2025-07-03,21,Nein,C
+K00322,Leitner Bauhof,B2B,Feldbach,Gross,2025-07-04,30,Nein,A
+K00323,Wolf Landtechnik,B2B,Gleisdorf,Mittel,2025-05-28,14,Nein,B
+K00324,Steiner e.U.,B2B,Gleisdorf,Klein,2026-01-27,30,Nein,C
+K00325,Winkler Agrar GmbH,B2B,Feldbach,Klein,2024-06-17,21,Nein,A
+K00326,Winkler Agrar GmbH,B2B,Hartberg,Klein,2023-08-09,21,Nein,A
+K00327,Lang e.U.,B2B,Graz-Umgebung,Klein,2025-11-05,21,Nein,B
+K00328,Mayr e.U.,B2B,Feldbach,Mittel,2024-09-10,21,Nein,B
+K00329,Mayr Gemeinde,B2B,Gleisdorf,Klein,2024-01-18,14,Nein,A
+K00330,Wagner e.U.,B2B,Suedoststeiermark,Klein,2024-10-01,30,Nein,A
+K00331,Mayr Landtechnik,B2B,Hartberg,Gross,2025-03-14,21,Ja,A
+K00332,Pichler Bauhof,B2B,Gleisdorf,Klein,2026-06-29,21,Nein,B
+K00333,Wagner KG,B2B,Graz-Umgebung,Klein,2024-08-21,21,Nein,A
+K00334,Mayr Betriebs-GmbH,B2B,Gleisdorf,Klein,2026-03-23,14,Nein,B
+K00335,Wagner KG,B2B,Feldbach,Mittel,2022-12-10,14,Nein,A
+K00336,Hofer Bauhof,B2B,Feldbach,Klein,2026-05-08,21,Nein,A
+K00337,Wolf Landwirtschaft,B2B,Graz-Umgebung,Mittel,2026-04-12,14,Nein,A
+K00338,Lang Betriebs-GmbH,B2B,Hartberg,Klein,2025-01-29,21,Nein,A
+K00339,Fischer Agrar GmbH,B2B,Gleisdorf,Gross,2023-12-28,30,Ja,A
+K00340,Gruber Gemeinde,B2B,Feldbach,Klein,2026-03-29,14,Nein,B
+K00341,Schmid Landtechnik,B2B,Gleisdorf,Klein,2024-12-15,14,Nein,C
+K00342,Leitner e.U.,B2B,Graz-Umgebung,Klein,2026-04-28,21,Nein,B
+K00343,Weber Bauhof,B2B,Gleisdorf,Klein,2024-12-28,14,Ja,A
+K00344,Weber Betriebs-GmbH,B2B,Graz-Umgebung,Mittel,2026-04-26,30,Nein,A
+K00345,Eder e.U.,B2B,Hartberg,Klein,2026-03-22,21,Nein,A
+K00346,Fischer Bauhof,B2B,Gleisdorf,Mittel,2025-11-11,14,Nein,A
+K00347,Wagner KG,B2B,Suedoststeiermark,Klein,2025-12-04,14,Ja,A
+K00348,Reiter Bauhof,B2B,Gleisdorf,Gross,2024-09-26,30,Nein,A
+K00349,Schmid Agrar GmbH,B2B,Hartberg,Klein,2025-11-01,14,Ja,A
+K00350,Weber Landwirtschaft,B2B,Suedoststeiermark,Klein,2025-12-31,21,Nein,A
+K00351,Wolf Agrar GmbH,B2B,Gleisdorf,Klein,2025-05-05,14,Nein,C
+K00352,Schwarz e.U.,B2B,Gleisdorf,Mittel,2023-09-12,14,Nein,A
+K00353,Pichler Agrar GmbH,B2B,Graz-Umgebung,Klein,2024-04-28,30,Nein,A
+K00354,Fuchs KG,B2B,Feldbach,Mittel,2026-06-24,14,Nein,B
+K00355,Schwarz Gemeinde,B2C,Hartberg,Mittel,2025-11-19,14,Nein,A
+K00356,Reiter e.U.,B2B,Feldbach,Klein,2026-05-24,21,Ja,A
+K00357,Fischer Betriebs-GmbH,B2B,Gleisdorf,Mittel,2025-12-09,30,Ja,A
+K00358,Fischer e.U.,B2B,Feldbach,Klein,2024-11-05,14,Nein,A
+K00359,Fuchs e.U.,B2B,Leibnitz,Klein,2026-05-30,14,Nein,B
+K00360,Mayr Gemeinde,B2B,Feldbach,Klein,2022-06-13,30,Nein,B
+K00361,Schwarz Landwirtschaft,B2B,Weiz,Klein,2025-06-29,21,Nein,B
+K00362,Wagner Bauhof,B2B,Hartberg,Mittel,2024-01-24,30,Nein,B
+K00363,Weber Agrar GmbH,B2B,Hartberg,Klein,2024-10-25,30,Nein,B
+K00364,Fischer Betriebs-GmbH,B2B,Hartberg,Mittel,2026-03-01,21,Nein,B
+K00365,Weber KG,B2B,Leibnitz,Mittel,2023-11-03,21,Ja,A
+K00366,Reiter Agrar GmbH,B2B,Gleisdorf,Klein,2023-04-23,14,Ja,A
+K00367,Schwarz Landwirtschaft,B2B,Hartberg,Klein,2025-05-04,30,Ja,A
+K00368,Fuchs Gemeinde,B2B,Suedoststeiermark,Mittel,2026-02-10,30,Nein,B
+K00369,Huber e.U.,B2B,Weiz,Klein,2025-08-07,30,Nein,B
+K00370,Schwarz Landwirtschaft,B2B,Feldbach,Klein,2024-02-02,21,Nein,B
+K00371,Berger Landwirtschaft,B2B,Suedoststeiermark,Klein,2025-03-29,14,Ja,A
+K00372,Lang Landwirtschaft,B2B,Hartberg,Klein,2023-09-06,21,Nein,A
+K00373,Leitner Landtechnik,B2B,Feldbach,Klein,2023-09-05,21,Ja,A
+K00374,Pichler Agrar GmbH,B2B,Gleisdorf,Gross,2024-07-06,30,Nein,A
+K00375,Wolf Bauhof,B2B,Feldbach,Mittel,2026-04-16,30,Ja,A
+K00376,Huber Bauhof,B2C,Hartberg,Klein,2024-05-16,21,Nein,A
+K00377,Maier Agrar GmbH,B2B,Leibnitz,Klein,2025-04-15,14,Ja,A
+K00378,Fischer Betriebs-GmbH,B2B,Feldbach,Mittel,2026-05-13,21,Nein,B
+K00379,Fuchs Agrar GmbH,B2B,Suedoststeiermark,Gross,2024-09-04,21,Nein,B
+K00380,Eder Betriebs-GmbH,B2B,Graz-Umgebung,Mittel,2023-06-24,30,Nein,C
+K00381,Schmid Agrar GmbH,B2B,Weiz,Klein,2025-02-06,21,Ja,A
+K00382,Eder Bauhof,B2B,Leibnitz,Klein,2023-03-17,21,Nein,A
+K00383,Hofer Betriebs-GmbH,B2B,Leibnitz,Klein,2026-06-24,21,Nein,A
+K00384,Lang e.U.,B2B,Graz-Umgebung,Klein,2023-10-25,21,Nein,C
+K00385,Fischer Gemeinde,B2B,Hartberg,Klein,2025-08-10,14,Nein,A
+K00386,Gruber Bauhof,B2C,Feldbach,Klein,2022-04-12,30,Nein,B
+K00387,Wagner Betriebs-GmbH,B2B,Gleisdorf,Klein,2024-02-11,30,Nein,A
+K00388,Winkler Agrar GmbH,B2B,Gleisdorf,Gross,2024-04-01,30,Nein,B
+K00389,Fischer KG,B2B,Feldbach,Klein,2023-01-05,21,Nein,B
+K00390,Wagner Betriebs-GmbH,B2C,Weiz,Klein,2023-08-14,14,Ja,A
+K00391,Berger Gemeinde,B2B,Feldbach,Mittel,2024-05-20,21,Nein,C
+K00392,Schmid Gemeinde,B2B,Graz-Umgebung,Klein,2025-04-26,21,Ja,A
+K00393,Gruber Landtechnik,B2B,Hartberg,Klein,2025-02-25,30,Nein,B
+K00394,Pichler Agrar GmbH,B2C,Feldbach,Mittel,2024-02-19,14,Nein,B
+K00395,Schwarz Agrar GmbH,B2B,Feldbach,Mittel,2026-06-04,30,Nein,B
+K00396,Gruber e.U.,B2B,Hartberg,Gross,2026-02-17,30,Nein,C
+K00397,Mayr Landtechnik,B2C,Hartberg,Klein,2024-06-04,21,Nein,B
+K00398,Wagner Bauhof,B2B,Feldbach,Klein,2025-08-03,21,Nein,C
+K00399,Berger Gemeinde,B2B,Hartberg,Klein,2025-03-27,14,Ja,A
+K00400,Pichler KG,B2B,Feldbach,Klein,2025-08-09,21,Nein,B
+K00401,Leitner KG,B2B,Hartberg,Klein,2026-01-03,30,Nein,B
+K00402,Berger Gemeinde,B2B,Gleisdorf,Klein,2026-02-03,21,Nein,A
+K00403,Hofer Landwirtschaft,B2B,Hartberg,Mittel,2024-07-19,14,Nein,B
+K00404,Huber e.U.,B2B,Hartberg,Klein,2024-04-28,21,Ja,A
+K00405,Wagner Landtechnik,B2B,Feldbach,Mittel,2024-12-09,14,Ja,A
+K00406,Steiner Landtechnik,B2B,Feldbach,Klein,2026-02-10,21,Nein,B
+K00407,Pichler Agrar GmbH,B2B,Feldbach,Klein,2025-06-29,21,Nein,B
+K00408,Berger Landtechnik,B2B,Leibnitz,Klein,2025-01-31,14,Nein,A
+K00409,Berger Betriebs-GmbH,B2B,Graz-Umgebung,Klein,2025-09-21,21,Nein,B
+K00410,Fuchs Betriebs-GmbH,B2B,Graz-Umgebung,Klein,2024-05-28,30,Nein,A
+K00411,Winkler Bauhof,B2C,Gleisdorf,Mittel,2024-08-29,30,Nein,A
+K00412,Schmid e.U.,B2C,Gleisdorf,Klein,2025-08-09,14,Ja,A
+K00413,Mayr Landtechnik,B2B,Hartberg,Gross,2024-09-14,21,Nein,A
+K00414,Fischer Landtechnik,B2B,Leibnitz,Mittel,2026-02-05,21,Ja,A
+K00415,Pichler Landtechnik,B2B,Leibnitz,Klein,2022-08-30,14,Nein,A
+K00416,Schwarz Agrar GmbH,B2B,Suedoststeiermark,Klein,2025-09-01,21,Nein,A
+K00417,Pichler Landtechnik,B2B,Suedoststeiermark,Klein,2024-08-22,14,Nein,A
+K00418,Eder Betriebs-GmbH,B2B,Gleisdorf,Klein,2026-03-13,14,Nein,C
+K00419,Hofer Gemeinde,B2B,Leibnitz,Gross,2026-06-28,30,Nein,A
+K00420,Lang Agrar GmbH,B2B,Suedoststeiermark,Klein,2026-01-05,14,Nein,B
+K00421,Berger KG,B2B,Hartberg,Mittel,2026-05-06,30,Nein,B
+K00422,Eder Bauhof,B2B,Graz-Umgebung,Klein,2025-01-09,14,Ja,A
+K00423,Gruber e.U.,B2B,Feldbach,Mittel,2026-03-04,21,Nein,C
+K00424,Huber Betriebs-GmbH,B2B,Graz-Umgebung,Mittel,2023-06-22,21,Nein,C
+K00425,Eder e.U.,B2B,Leibnitz,Mittel,2025-08-19,30,Nein,A
+K00426,Wagner Gemeinde,B2B,Feldbach,Mittel,2025-10-29,30,Nein,B
+K00427,Schwarz Gemeinde,B2B,Weiz,Mittel,2024-07-03,21,Ja,A
+K00428,Wolf Gemeinde,B2B,Feldbach,Klein,2023-05-12,21,Nein,B
+K00429,Reiter KG,B2B,Leibnitz,Klein,2024-11-02,14,Nein,A
+K00430,Fuchs e.U.,B2B,Leibnitz,Klein,2025-10-08,21,Nein,B
+K00431,Schmid Gemeinde,B2B,Weiz,Klein,2025-02-07,14,Nein,A
+K00432,Maier e.U.,B2C,Suedoststeiermark,Mittel,2025-09-03,21,Ja,A
+K00433,Wagner Gemeinde,B2B,Feldbach,Mittel,2026-02-23,14,Ja,A
+K00434,Steiner e.U.,B2B,Hartberg,Klein,2023-08-06,30,Ja,A
+K00435,Winkler Bauhof,B2B,Gleisdorf,Klein,2024-02-13,21,Ja,A
+K00436,Maier Landwirtschaft,B2C,Feldbach,Klein,2024-12-16,21,Nein,A
+K00437,Hofer Agrar GmbH,B2B,Gleisdorf,Klein,2024-06-27,21,Nein,B
+K00438,Berger Betriebs-GmbH,B2C,Hartberg,Mittel,2025-09-09,14,Nein,B
+K00439,Wagner KG,B2B,Gleisdorf,Klein,2023-04-09,14,Nein,C
+K00440,Leitner Landtechnik,B2B,Gleisdorf,Klein,2026-03-21,30,Nein,C
+K00441,Wolf Betriebs-GmbH,B2B,Suedoststeiermark,Klein,2025-02-23,30,Ja,A
+K00442,Fischer e.U.,B2B,Hartberg,Klein,2025-08-28,14,Ja,A
+K00443,Fischer e.U.,B2B,Suedoststeiermark,Mittel,2024-07-30,30,Nein,A
+K00444,Gruber Bauhof,B2B,Gleisdorf,Klein,2023-06-08,21,Nein,B
+K00445,Eder KG,B2B,Hartberg,Gross,2025-06-14,21,Nein,A
+K00446,Steiner Bauhof,B2B,Gleisdorf,Klein,2025-05-02,21,Nein,A
+K00447,Fuchs Bauhof,B2B,Gleisdorf,Klein,2025-08-21,14,Nein,B
+K00448,Weber Agrar GmbH,B2B,Hartberg,Klein,2025-03-28,14,Ja,A
+K00449,Berger Betriebs-GmbH,B2B,Gleisdorf,Klein,2026-05-09,21,Ja,A
+K00450,Fuchs Landtechnik,B2B,Feldbach,Mittel,2022-04-09,14,Ja,A
+K00451,Winkler Gemeinde,B2B,Hartberg,Mittel,2026-05-23,30,Nein,B
+K00452,Lang Agrar GmbH,B2B,Weiz,Klein,2025-04-10,21,Nein,B
+K00453,Gruber Gemeinde,B2B,Gleisdorf,Gross,2024-05-18,21,Nein,B
+K00454,Wagner Agrar GmbH,B2B,Suedoststeiermark,Mittel,2024-10-24,21,Nein,B
+K00455,Reiter Betriebs-GmbH,B2B,Hartberg,Klein,2024-10-12,30,Nein,B
+K00456,Wagner Betriebs-GmbH,B2B,Graz-Umgebung,Gross,2025-08-31,21,Nein,C
+K00457,Hofer Bauhof,B2B,Leibnitz,Klein,2026-06-16,21,Nein,A
+K00458,Weber Gemeinde,B2B,Graz-Umgebung,Gross,2023-03-01,21,Nein,A
+K00459,Eder Landtechnik,B2B,Suedoststeiermark,Klein,2023-02-12,30,Ja,A
+K00460,Winkler Bauhof,B2C,Feldbach,Klein,2024-10-01,14,Ja,A
+K00461,Fuchs Bauhof,B2C,Gleisdorf,Klein,2025-09-28,21,Nein,C
+K00462,Weber e.U.,B2B,Feldbach,Klein,2025-08-16,30,Nein,A
+K00463,Reiter Bauhof,B2B,Suedoststeiermark,Mittel,2026-03-09,21,Nein,B
+K00464,Schwarz Agrar GmbH,B2B,Weiz,Klein,2023-10-25,30,Nein,C
+K00465,Weber Landtechnik,B2B,Hartberg,Klein,2025-04-11,21,Nein,A
+K00466,Gruber Landwirtschaft,B2B,Graz-Umgebung,Klein,2023-07-04,14,Nein,A
+K00467,Mayr e.U.,B2B,Feldbach,Klein,2025-11-16,21,Ja,A
+K00468,Steiner Landtechnik,B2B,Weiz,Klein,2024-09-02,21,Ja,A
+K00469,Schmid Landwirtschaft,B2B,Leibnitz,Klein,2025-10-25,14,Nein,A
+K00470,Berger e.U.,B2B,Feldbach,Klein,2026-04-23,14,Nein,C
+K00471,Schwarz Gemeinde,B2C,Weiz,Klein,2024-05-24,14,Ja,A
+K00472,Huber Landtechnik,B2B,Suedoststeiermark,Mittel,2025-01-26,30,Ja,A
+K00473,Fischer Landwirtschaft,B2B,Feldbach,Klein,2025-01-06,30,Ja,A
+K00474,Weber Landwirtschaft,B2B,Gleisdorf,Klein,2025-12-22,21,Ja,A
+K00475,Reiter Betriebs-GmbH,B2B,Hartberg,Klein,2023-11-15,14,Ja,A
+K00476,Mayr Bauhof,B2B,Weiz,Klein,2025-09-26,21,Ja,A
+K00477,Eder Bauhof,B2B,Feldbach,Klein,2025-12-08,30,Nein,B
+K00478,Wolf Betriebs-GmbH,B2B,Graz-Umgebung,Klein,2024-10-23,30,Nein,A
+K00479,Maier Gemeinde,B2B,Suedoststeiermark,Klein,2025-10-06,14,Nein,C
+K00480,Wagner Landtechnik,B2B,Feldbach,Klein,2026-01-08,14,Nein,C
+K00481,Hofer KG,B2B,Hartberg,Klein,2026-06-23,30,Nein,C
+K00482,Gruber Landwirtschaft,B2B,Weiz,Klein,2026-02-02,30,Nein,A
+K00483,Gruber Landtechnik,B2B,Leibnitz,Klein,2025-10-03,14,Nein,A
+K00484,Schmid Landtechnik,B2B,Gleisdorf,Mittel,2025-09-26,30,Nein,C
+K00485,Pichler Betriebs-GmbH,B2B,Feldbach,Mittel,2024-04-15,14,Ja,A
+K00486,Winkler Landwirtschaft,B2B,Feldbach,Klein,2026-05-22,14,Nein,B
+K00487,Schwarz Landwirtschaft,B2B,Graz-Umgebung,Klein,2022-10-28,30,Nein,A
+K00488,Lang e.U.,B2B,Gleisdorf,Gross,2026-03-13,21,Nein,B
+K00489,Weber Gemeinde,B2B,Suedoststeiermark,Klein,2025-09-08,21,Ja,A
+K00490,Maier Gemeinde,B2B,Gleisdorf,Klein,2025-07-04,30,Nein,C
+K00491,Steiner Agrar GmbH,B2B,Graz-Umgebung,Klein,2025-05-11,30,Nein,C
+K00492,Maier Bauhof,B2B,Feldbach,Mittel,2023-04-30,14,Nein,C
+K00493,Wolf e.U.,B2B,Feldbach,Klein,2026-04-21,21,Ja,A
+K00494,Leitner KG,B2B,Graz-Umgebung,Mittel,2024-04-04,30,Nein,A
+K00495,Schmid Landwirtschaft,B2B,Graz-Umgebung,Klein,2023-07-23,21,Nein,B
+K00496,Pichler Bauhof,B2B,Hartberg,Klein,2024-09-18,30,Ja,A
+K00497,Eder KG,B2B,Hartberg,Klein,2025-05-25,21,Nein,A
+K00498,Gruber Bauhof,B2C,Gleisdorf,Klein,2024-06-10,14,Nein,B
+K00499,Steiner Bauhof,B2B,Gleisdorf,Gross,2024-12-08,30,Nein,C
+K00500,Eder Betriebs-GmbH,B2B,Feldbach,Klein,2022-03-12,30,Ja,A
+K00501,Wagner Gemeinde,B2C,Suedoststeiermark,Klein,2024-10-04,30,Nein,C
+K00502,Huber Landtechnik,B2B,Hartberg,Klein,2026-01-25,14,Nein,A
+K00503,Fuchs e.U.,B2B,Leibnitz,Klein,2026-04-09,14,Ja,A
+K00504,Wolf KG,B2B,Feldbach,Klein,2025-05-18,30,Ja,A
+K00505,Winkler Betriebs-GmbH,B2B,Feldbach,Mittel,2024-10-29,14,Ja,A
+K00506,Wolf e.U.,B2B,Weiz,Klein,2026-02-26,14,Nein,A
+K00507,Wagner KG,B2B,Hartberg,Klein,2024-03-09,30,Nein,A
+K00508,Weber Betriebs-GmbH,B2B,Weiz,Klein,2025-02-09,30,Nein,B
+K00509,Wagner Agrar GmbH,B2B,Feldbach,Klein,2025-03-28,30,Ja,A
+K00510,Schmid Betriebs-GmbH,B2C,Graz-Umgebung,Klein,2026-03-17,21,Nein,B
+K00511,Reiter Bauhof,B2C,Leibnitz,Klein,2024-11-30,14,Ja,A
+K00512,Gruber Bauhof,B2B,Suedoststeiermark,Klein,2025-04-04,30,Nein,C
+K00513,Gruber Landwirtschaft,B2B,Feldbach,Mittel,2026-05-15,14,Nein,C
+K00514,Mayr Landtechnik,B2B,Hartberg,Gross,2024-09-29,30,Nein,B
+K00515,Weber Landtechnik,B2C,Hartberg,Klein,2022-12-22,30,Nein,B
+K00516,Winkler Gemeinde,B2B,Gleisdorf,Klein,2024-12-03,21,Nein,A
+K00517,Schwarz Gemeinde,B2C,Hartberg,Mittel,2025-01-14,30,Ja,A
+K00518,Berger KG,B2B,Feldbach,Klein,2025-11-17,14,Ja,A
+K00519,Fuchs Betriebs-GmbH,B2B,Hartberg,Klein,2022-03-15,30,Nein,A
+K00520,Leitner Betriebs-GmbH,B2B,Hartberg,Mittel,2026-06-16,21,Ja,A
+K00521,Pichler Landtechnik,B2B,Gleisdorf,Klein,2022-04-09,21,Nein,C
+K00522,Mayr e.U.,B2B,Feldbach,Mittel,2025-04-09,30,Ja,A
+K00523,Fischer e.U.,B2B,Hartberg,Klein,2024-06-28,21,Nein,B
+K00524,Maier Landwirtschaft,B2C,Weiz,Klein,2024-12-29,30,Nein,A
+K00525,Fischer Agrar GmbH,B2B,Gleisdorf,Mittel,2024-09-04,21,Nein,C
+K00526,Wagner KG,B2B,Hartberg,Klein,2026-06-13,30,Nein,B
+K00527,Hofer Landwirtschaft,B2B,Gleisdorf,Klein,2026-06-08,30,Ja,A
+K00528,Winkler Landtechnik,B2B,Leibnitz,Klein,2024-09-29,21,Ja,A
+K00529,Gruber Bauhof,B2C,Hartberg,Klein,2025-07-28,14,Nein,C
+K00530,Lang Landwirtschaft,B2B,Weiz,Klein,2023-10-13,14,Nein,A
+K00531,Reiter Agrar GmbH,B2B,Graz-Umgebung,Klein,2026-05-22,30,Nein,A
+K00532,Mayr e.U.,B2B,Gleisdorf,Klein,2025-08-12,30,Nein,B
+K00533,Pichler Landtechnik,B2C,Suedoststeiermark,Klein,2025-04-11,30,Nein,B
+K00534,Winkler Betriebs-GmbH,B2B,Leibnitz,Klein,2023-05-28,14,Ja,A
+K00535,Eder Gemeinde,B2B,Feldbach,Klein,2023-04-05,21,Nein,A
+K00536,Maier Agrar GmbH,B2B,Gleisdorf,Klein,2023-10-23,30,Nein,B
+K00537,Schmid Landwirtschaft,B2B,Leibnitz,Klein,2024-03-13,30,Nein,A
+K00538,Eder Landwirtschaft,B2C,Graz-Umgebung,Klein,2025-09-27,14,Nein,B
+K00539,Lang Betriebs-GmbH,B2B,Gleisdorf,Mittel,2023-04-09,21,Nein,A
+K00540,Mayr Betriebs-GmbH,B2C,Feldbach,Klein,2025-10-19,14,Nein,A
+K00541,Gruber KG,B2B,Weiz,Klein,2023-02-07,21,Nein,C
+K00542,Schwarz Landwirtschaft,B2B,Feldbach,Mittel,2024-08-12,14,Ja,A
+K00543,Gruber Landtechnik,B2B,Leibnitz,Klein,2022-02-02,14,Nein,B
+K00544,Weber Landtechnik,B2B,Gleisdorf,Klein,2024-04-11,14,Nein,A
+K00545,Gruber Gemeinde,B2B,Leibnitz,Klein,2024-01-26,30,Nein,A
+K00546,Winkler Gemeinde,B2C,Suedoststeiermark,Klein,2024-08-23,30,Ja,A
+K00547,Berger Landwirtschaft,B2B,Weiz,Mittel,2024-05-08,30,Nein,A
+K00548,Gruber Gemeinde,B2B,Weiz,Mittel,2024-09-24,21,Nein,C
+K00549,Reiter Betriebs-GmbH,B2B,Leibnitz,Klein,2026-05-22,21,Ja,A
+K00550,Huber Bauhof,B2B,Suedoststeiermark,Klein,2024-02-17,21,Ja,A
+K00551,Wagner Agrar GmbH,B2B,Suedoststeiermark,Gross,2024-03-22,30,Ja,A
+K00552,Maier Gemeinde,B2B,Feldbach,Klein,2025-10-27,21,Nein,A
+K00553,Weber Gemeinde,B2B,Gleisdorf,Mittel,2026-04-30,30,Nein,B
+K00554,Weber Gemeinde,B2B,Feldbach,Mittel,2026-05-09,30,Ja,A
+K00555,Wolf Agrar GmbH,B2B,Suedoststeiermark,Klein,2022-08-06,30,Nein,A
+K00556,Huber Gemeinde,B2B,Weiz,Klein,2023-10-02,14,Nein,B
+K00557,Weber Gemeinde,B2C,Gleisdorf,Klein,2026-06-08,21,Nein,B
+K00558,Fuchs e.U.,B2B,Feldbach,Klein,2024-09-24,14,Nein,A
+K00559,Steiner Betriebs-GmbH,B2B,Hartberg,Klein,2023-11-05,14,Nein,B
+K00560,Lang Agrar GmbH,B2B,Leibnitz,Klein,2025-09-30,30,Nein,B
+K00561,Maier Betriebs-GmbH,B2B,Feldbach,Mittel,2024-01-15,21,Ja,A
+K00562,Maier Bauhof,B2C,Feldbach,Mittel,2025-07-13,30,Nein,B
+K00563,Eder e.U.,B2B,Suedoststeiermark,Klein,2025-10-30,14,Nein,B
+K00564,Wolf Gemeinde,B2B,Leibnitz,Gross,2025-10-04,30,Nein,B
+K00565,Fischer Gemeinde,B2C,Feldbach,Gross,2025-08-06,21,Nein,C
+K00566,Schmid Gemeinde,B2C,Hartberg,Mittel,2024-11-04,21,Nein,A
+K00567,Fuchs Gemeinde,B2B,Graz-Umgebung,Mittel,2023-11-10,30,Nein,B
+K00568,Mayr Landtechnik,B2B,Leibnitz,Klein,2026-06-13,14,Nein,B
+K00569,Steiner Landtechnik,B2B,Weiz,Klein,2026-02-14,30,Nein,A
+K00570,Mayr Agrar GmbH,B2B,Hartberg,Klein,2024-06-05,30,Ja,A
+K00571,Schwarz Bauhof,B2B,Hartberg,Mittel,2026-02-15,30,Ja,A
+K00572,Hofer KG,B2B,Feldbach,Klein,2026-03-30,30,Ja,A
+K00573,Eder e.U.,B2C,Leibnitz,Klein,2023-10-14,21,Ja,A
+K00574,Eder KG,B2B,Feldbach,Klein,2026-03-25,30,Nein,A
+K00575,Steiner KG,B2B,Feldbach,Klein,2025-07-14,21,Nein,C
+K00576,Gruber e.U.,B2B,Leibnitz,Klein,2026-05-25,14,Nein,B
+K00577,Fischer Gemeinde,B2B,Graz-Umgebung,Gross,2026-04-20,21,Ja,A
+K00578,Leitner Gemeinde,B2B,Leibnitz,Klein,2026-04-29,30,Nein,A
+K00579,Pichler Agrar GmbH,B2B,Gleisdorf,Klein,2024-03-23,21,Nein,A
+K00580,Fischer Landwirtschaft,B2C,Gleisdorf,Klein,2026-02-21,21,Nein,B
+K00581,Weber e.U.,B2B,Gleisdorf,Klein,2023-06-26,30,Nein,A
+K00582,Huber Bauhof,B2B,Hartberg,Klein,2024-07-17,21,Nein,A
+K00583,Gruber Betriebs-GmbH,B2B,Gleisdorf,Mittel,2024-07-03,21,Ja,A
+K00584,Pichler Bauhof,B2B,Gleisdorf,Klein,2022-09-27,21,Nein,A
+K00585,Berger Gemeinde,B2C,Weiz,Mittel,2024-06-22,21,Nein,B
+K00586,Huber Gemeinde,B2B,Suedoststeiermark,Klein,2023-07-10,30,Ja,A
+K00587,Mayr Betriebs-GmbH,B2B,Graz-Umgebung,Mittel,2024-05-16,21,Nein,C
+K00588,Eder e.U.,B2B,Feldbach,Klein,2025-11-26,21,Nein,B
+K00589,Lang Agrar GmbH,B2B,Gleisdorf,Klein,2025-03-08,30,Nein,A
+K00590,Fischer Agrar GmbH,B2B,Feldbach,Mittel,2026-06-04,30,Nein,A
+K00591,Reiter Landwirtschaft,B2B,Hartberg,Gross,2026-01-09,30,Nein,A
+K00592,Gruber Agrar GmbH,B2B,Hartberg,Klein,2024-03-08,14,Nein,A
+K00593,Fischer Agrar GmbH,B2B,Feldbach,Gross,2026-06-26,30,Nein,A
+K00594,Eder Landtechnik,B2B,Leibnitz,Klein,2025-01-23,21,Nein,A
+K00595,Huber e.U.,B2B,Gleisdorf,Klein,2023-07-07,14,Nein,A
+K00596,Maier Betriebs-GmbH,B2B,Suedoststeiermark,Klein,2026-05-30,21,Ja,A
+K00597,Reiter Bauhof,B2C,Feldbach,Klein,2024-12-28,30,Nein,A
+K00598,Eder Landtechnik,B2B,Feldbach,Mittel,2024-06-24,21,Nein,A
+K00599,Eder KG,B2B,Gleisdorf,Klein,2025-05-11,30,Nein,A
+K00600,Huber Gemeinde,B2B,Feldbach,Gross,2025-08-23,30,Nein,A
+K00601,Schwarz Landwirtschaft,B2B,Hartberg,Klein,2024-05-16,14,Nein,C
+K00602,Reiter KG,B2B,Graz-Umgebung,Mittel,2025-04-01,21,Nein,A
+K00603,Leitner Bauhof,B2B,Feldbach,Klein,2024-12-21,21,Ja,A
+K00604,Fischer Gemeinde,B2C,Feldbach,Klein,2023-12-13,21,Ja,A
+K00605,Reiter Landtechnik,B2B,Weiz,Klein,2025-11-26,30,Nein,C
+K00606,Winkler e.U.,B2B,Gleisdorf,Klein,2024-05-31,30,Nein,B
+K00607,Hofer e.U.,B2B,Weiz,Gross,2023-12-06,30,Ja,A
+K00608,Wolf Bauhof,B2B,Hartberg,Klein,2024-03-19,21,Ja,A
+K00609,Fuchs Landtechnik,B2B,Suedoststeiermark,Gross,2025-06-07,21,Ja,A
+K00610,Pichler Agrar GmbH,B2B,Feldbach,Gross,2025-03-13,30,Nein,B
+K00611,Berger Landwirtschaft,B2B,Gleisdorf,Mittel,2024-10-01,14,Nein,A
+K00612,Eder Agrar GmbH,B2B,Leibnitz,Klein,2025-09-11,21,Nein,B
+K00613,Fuchs Betriebs-GmbH,B2C,Suedoststeiermark,Klein,2023-09-26,30,Ja,A
+K00614,Pichler Betriebs-GmbH,B2B,Hartberg,Klein,2021-11-19,21,Ja,A
+K00615,Mayr KG,B2B,Weiz,Mittel,2023-09-05,14,Ja,A
+K00616,Wagner Agrar GmbH,B2B,Feldbach,Klein,2026-01-11,14,Nein,B
+K00617,Maier Betriebs-GmbH,B2B,Feldbach,Gross,2025-12-07,30,Ja,A
+K00618,Schwarz Agrar GmbH,B2B,Feldbach,Mittel,2025-12-16,21,Nein,A
+K00619,Winkler Landtechnik,B2B,Leibnitz,Klein,2024-10-27,14,Nein,A
+K00620,Berger Landtechnik,B2B,Hartberg,Mittel,2024-01-21,30,Nein,A
+K00621,Schwarz Landtechnik,B2B,Leibnitz,Klein,2025-01-03,21,Nein,B
+K00622,Maier KG,B2B,Feldbach,Klein,2023-05-28,21,Ja,A
+K00623,Weber KG,B2B,Suedoststeiermark,Klein,2022-10-01,14,Ja,A
+K00624,Gruber Bauhof,B2B,Suedoststeiermark,Klein,2025-02-01,21,Nein,B
+K00625,Eder Bauhof,B2B,Feldbach,Mittel,2025-12-19,14,Nein,A
+K00626,Mayr Betriebs-GmbH,B2B,Feldbach,Gross,2024-12-28,30,Nein,C
+K00627,Mayr Landtechnik,B2B,Feldbach,Klein,2026-05-19,21,Nein,A
+K00628,Wolf Betriebs-GmbH,B2C,Suedoststeiermark,Klein,2025-01-16,21,Nein,A
+K00629,Mayr Bauhof,B2B,Hartberg,Klein,2025-06-01,30,Nein,B
+K00630,Wolf Agrar GmbH,B2B,Gleisdorf,Klein,2025-07-31,30,Nein,A
+K00631,Eder Agrar GmbH,B2B,Gleisdorf,Klein,2025-09-09,14,Ja,A
+K00632,Fischer Landwirtschaft,B2B,Leibnitz,Klein,2024-11-20,14,Ja,A
+K00633,Pichler Landtechnik,B2B,Gleisdorf,Klein,2026-03-24,30,Ja,A
+K00634,Hofer Gemeinde,B2B,Gleisdorf,Klein,2026-06-16,30,Nein,B
+K00635,Winkler Landwirtschaft,B2B,Graz-Umgebung,Klein,2026-02-23,30,Nein,A
+K00636,Reiter Landtechnik,B2B,Feldbach,Mittel,2025-06-13,14,Nein,A
+K00637,Hofer e.U.,B2B,Suedoststeiermark,Mittel,2024-12-19,14,Ja,A
+K00638,Eder Bauhof,B2B,Feldbach,Mittel,2025-03-25,14,Nein,A
+K00639,Wagner Landwirtschaft,B2B,Gleisdorf,Klein,2024-08-21,30,Nein,A
+K00640,Wagner Landwirtschaft,B2B,Suedoststeiermark,Mittel,2025-07-22,21,Nein,B
+K00641,Mayr Landtechnik,B2B,Weiz,Klein,2026-02-12,21,Nein,B
+K00642,Maier Landtechnik,B2B,Leibnitz,Gross,2025-09-28,30,Nein,A
+K00643,Wolf Bauhof,B2B,Hartberg,Klein,2024-12-21,14,Nein,A
+K00644,Winkler Landtechnik,B2C,Gleisdorf,Klein,2024-09-30,21,Nein,A
+K00645,Schmid KG,B2B,Hartberg,Klein,2023-09-24,14,Nein,C
+K00646,Schwarz Betriebs-GmbH,B2B,Gleisdorf,Klein,2026-04-15,21,Ja,A
+K00647,Eder e.U.,B2B,Gleisdorf,Mittel,2025-03-08,30,Nein,B
+K00648,Schwarz KG,B2B,Hartberg,Klein,2024-05-19,21,Nein,B
+K00649,Wolf Landwirtschaft,B2B,Hartberg,Klein,2024-04-29,14,Nein,A
+K00650,Pichler Bauhof,B2B,Hartberg,Klein,2026-03-23,30,Ja,A
+K00651,Steiner Landwirtschaft,B2B,Hartberg,Klein,2026-01-10,30,Nein,B
+K00652,Leitner e.U.,B2B,Feldbach,Mittel,2024-05-28,14,Nein,B
+K00653,Steiner Agrar GmbH,B2B,Suedoststeiermark,Klein,2025-10-11,14,Nein,B
+K00654,Fuchs Landtechnik,B2B,Weiz,Klein,2023-05-24,21,Nein,B
+K00655,Hofer Bauhof,B2B,Feldbach,Mittel,2023-02-15,14,Nein,A
+K00656,Weber Landwirtschaft,B2B,Leibnitz,Gross,2025-12-24,30,Ja,A
+K00657,Lang Agrar GmbH,B2B,Suedoststeiermark,Klein,2025-08-18,14,Nein,A
+K00658,Berger Betriebs-GmbH,B2B,Hartberg,Klein,2025-07-13,14,Ja,A
+K00659,Mayr Betriebs-GmbH,B2B,Feldbach,Klein,2025-12-16,21,Nein,B
+K00660,Eder e.U.,B2B,Feldbach,Klein,2025-06-18,21,Nein,B
+K00661,Wolf KG,B2B,Feldbach,Klein,2024-03-09,14,Ja,A
+K00662,Hofer Landwirtschaft,B2B,Leibnitz,Klein,2026-06-22,30,Ja,A
+K00663,Mayr e.U.,B2B,Graz-Umgebung,Klein,2025-06-26,14,Nein,A
+K00664,Fuchs e.U.,B2B,Feldbach,Klein,2026-04-03,14,Ja,A
+K00665,Leitner Betriebs-GmbH,B2B,Leibnitz,Klein,2026-03-12,14,Nein,C
+K00666,Weber Betriebs-GmbH,B2B,Feldbach,Mittel,2026-06-28,30,Ja,A
+K00667,Maier Gemeinde,B2B,Weiz,Klein,2025-12-08,30,Nein,A
+K00668,Pichler Landtechnik,B2B,Leibnitz,Klein,2025-04-15,21,Nein,B
+K00669,Eder Bauhof,B2B,Hartberg,Mittel,2024-10-16,14,Nein,A
+K00670,Gruber e.U.,B2B,Feldbach,Klein,2026-02-25,14,Ja,A
+K00671,Gruber Landtechnik,B2B,Weiz,Mittel,2023-03-10,14,Nein,B
+K00672,Fuchs KG,B2B,Graz-Umgebung,Klein,2025-11-06,30,Nein,A
+K00673,Wagner Bauhof,B2B,Hartberg,Klein,2025-07-15,14,Nein,A
+K00674,Fuchs KG,B2B,Feldbach,Klein,2025-06-30,30,Nein,A
+K00675,Wagner Betriebs-GmbH,B2B,Feldbach,Klein,2023-11-09,21,Nein,C
+K00676,Berger KG,B2B,Gleisdorf,Gross,2025-05-02,21,Nein,A
+K00677,Mayr Bauhof,B2B,Weiz,Mittel,2024-10-03,30,Nein,A
+K00678,Schmid Bauhof,B2B,Leibnitz,Mittel,2026-04-25,14,Nein,B
+K00679,Reiter Gemeinde,B2B,Leibnitz,Klein,2025-06-27,30,Nein,A
+K00680,Wolf KG,B2B,Suedoststeiermark,Klein,2025-12-02,14,Nein,B
+K00681,Schmid e.U.,B2B,Suedoststeiermark,Klein,2024-07-14,30,Nein,B
+K00682,Lang Gemeinde,B2B,Hartberg,Klein,2025-10-17,21,Nein,A
+K00683,Weber Gemeinde,B2C,Gleisdorf,Klein,2024-11-30,14,Nein,B
+K00684,Weber Gemeinde,B2B,Hartberg,Klein,2024-12-09,30,Nein,B
+K00685,Weber Bauhof,B2B,Hartberg,Klein,2023-12-01,14,Nein,B
+K00686,Eder Agrar GmbH,B2B,Graz-Umgebung,Klein,2026-01-15,14,Nein,B
+K00687,Weber Betriebs-GmbH,B2C,Leibnitz,Klein,2026-05-12,30,Nein,B
+K00688,Schwarz e.U.,B2B,Graz-Umgebung,Klein,2024-09-20,21,Nein,B
+K00689,Maier Gemeinde,B2B,Gleisdorf,Klein,2025-06-27,30,Nein,A
+K00690,Hofer Gemeinde,B2C,Gleisdorf,Klein,2025-10-16,21,Nein,B
+K00691,Huber Bauhof,B2B,Gleisdorf,Mittel,2025-11-08,21,Ja,A
+K00692,Winkler Bauhof,B2B,Feldbach,Klein,2025-09-28,14,Nein,B
+K00693,Leitner Landtechnik,B2B,Hartberg,Gross,2026-04-20,21,Nein,C
+K00694,Schmid Agrar GmbH,B2B,Gleisdorf,Gross,2024-07-10,21,Nein,C
+K00695,Maier Gemeinde,B2B,Feldbach,Klein,2025-12-23,14,Nein,B
+K00696,Wolf KG,B2B,Graz-Umgebung,Klein,2023-07-17,21,Nein,C
+K00697,Berger Gemeinde,B2B,Feldbach,Klein,2025-06-23,14,Nein,A
+K00698,Wagner KG,B2B,Feldbach,Mittel,2026-01-29,14,Nein,A
+K00699,Eder KG,B2B,Leibnitz,Gross,2025-07-07,30,Nein,A
+K00700,Maier Betriebs-GmbH,B2B,Feldbach,Klein,2025-03-23,30,Nein,C
+K00701,Schwarz Gemeinde,B2B,Suedoststeiermark,Mittel,2025-01-01,30,Nein,B
+K00702,Pichler Landtechnik,B2B,Leibnitz,Klein,2023-10-12,30,Nein,B
+K00703,Reiter e.U.,B2B,Feldbach,Gross,2024-03-14,21,Nein,A
+K00704,Berger Agrar GmbH,B2B,Leibnitz,Klein,2024-08-01,21,Nein,A
+K00705,Winkler Agrar GmbH,B2C,Weiz,Mittel,2025-02-18,14,Nein,A
+K00706,Fuchs Agrar GmbH,B2B,Leibnitz,Klein,2025-01-13,30,Ja,A
+K00707,Berger Gemeinde,B2B,Suedoststeiermark,Klein,2023-01-29,14,Ja,A
+K00708,Berger Agrar GmbH,B2B,Leibnitz,Klein,2026-06-14,21,Nein,A
+K00709,Wolf e.U.,B2B,Weiz,Klein,2025-09-26,14,Ja,A
+K00710,Schmid Landtechnik,B2B,Hartberg,Klein,2024-04-29,30,Nein,A
+K00711,Hofer e.U.,B2B,Leibnitz,Klein,2024-06-25,30,Nein,B
+K00712,Schwarz Bauhof,B2C,Graz-Umgebung,Klein,2025-07-23,30,Ja,A
+K00713,Fischer e.U.,B2B,Weiz,Klein,2026-05-01,14,Nein,C
+K00714,Fuchs Landwirtschaft,B2B,Weiz,Mittel,2026-05-28,30,Nein,B
+K00715,Winkler KG,B2B,Gleisdorf,Klein,2023-10-24,14,Nein,B
+K00716,Leitner Bauhof,B2B,Leibnitz,Klein,2025-08-01,14,Nein,B
+K00717,Schwarz Gemeinde,B2B,Graz-Umgebung,Klein,2023-10-29,14,Nein,A
+K00718,Schmid Bauhof,B2B,Feldbach,Klein,2024-04-29,14,Ja,A
+K00719,Huber Agrar GmbH,B2C,Feldbach,Klein,2026-03-14,21,Ja,A
+K00720,Wagner Bauhof,B2B,Gleisdorf,Klein,2026-03-23,14,Nein,A
+K00721,Winkler Agrar GmbH,B2B,Gleisdorf,Mittel,2025-05-17,21,Nein,B
+K00722,Gruber e.U.,B2B,Weiz,Klein,2025-02-08,21,Nein,C
+K00723,Berger Agrar GmbH,B2B,Feldbach,Klein,2025-07-05,30,Nein,B
+K00724,Gruber Bauhof,B2B,Gleisdorf,Klein,2025-04-03,21,Ja,A
+K00725,Schwarz Agrar GmbH,B2B,Weiz,Klein,2026-02-05,21,Nein,B
+K00726,Maier Betriebs-GmbH,B2B,Weiz,Klein,2022-12-08,14,Nein,A
+K00727,Winkler Landwirtschaft,B2C,Weiz,Mittel,2026-06-27,30,Nein,B
+K00728,Fischer Gemeinde,B2B,Leibnitz,Klein,2021-08-29,14,Nein,A
+K00729,Fischer Betriebs-GmbH,B2B,Weiz,Klein,2023-12-21,14,Ja,A
+K00730,Eder Landtechnik,B2B,Leibnitz,Klein,2025-04-03,14,Ja,A
+K00731,Wagner Betriebs-GmbH,B2B,Weiz,Klein,2025-01-30,21,Nein,B
+K00732,Wolf Bauhof,B2B,Gleisdorf,Mittel,2024-12-28,21,Nein,A
+K00733,Mayr Agrar GmbH,B2C,Weiz,Klein,2024-02-05,21,Nein,B
+K00734,Reiter KG,B2B,Feldbach,Klein,2026-05-06,14,Nein,B
+K00735,Gruber Betriebs-GmbH,B2B,Hartberg,Gross,2025-04-09,30,Ja,A
+K00736,Huber Landwirtschaft,B2B,Gleisdorf,Klein,2024-03-30,21,Nein,B
+K00737,Weber Agrar GmbH,B2B,Suedoststeiermark,Klein,2024-02-18,14,Ja,A
+K00738,Wagner Landwirtschaft,B2B,Weiz,Mittel,2025-11-30,21,Ja,A
+K00739,Weber e.U.,B2B,Feldbach,Klein,2022-07-02,21,Nein,A
+K00740,Schwarz Betriebs-GmbH,B2B,Weiz,Klein,2025-11-08,21,Nein,C
+K00741,Reiter KG,B2B,Hartberg,Klein,2024-08-07,14,Nein,B
+K00742,Lang Landtechnik,B2B,Leibnitz,Klein,2024-11-21,21,Ja,A
+K00743,Pichler Agrar GmbH,B2B,Suedoststeiermark,Mittel,2025-12-20,14,Nein,A
+K00744,Schmid e.U.,B2B,Weiz,Klein,2023-01-01,14,Nein,A
+K00745,Gruber Agrar GmbH,B2C,Weiz,Klein,2022-01-15,14,Nein,B
+K00746,Winkler Agrar GmbH,B2B,Hartberg,Klein,2023-10-27,21,Nein,A
+K00747,Schmid Betriebs-GmbH,B2B,Gleisdorf,Klein,2022-07-21,14,Nein,B
+K00748,Leitner Landwirtschaft,B2B,Suedoststeiermark,Klein,2024-10-13,21,Ja,A
+K00749,Hofer Agrar GmbH,B2B,Leibnitz,Klein,2025-06-09,14,Nein,B
+K00750,Reiter KG,B2B,Gleisdorf,Mittel,2026-01-12,30,Nein,A
+K00751,Fischer Gemeinde,B2B,Hartberg,Mittel,2025-12-25,14,Nein,B
+K00752,Wolf KG,B2B,Feldbach,Gross,2025-10-29,21,Nein,A
+K00753,Lang Betriebs-GmbH,B2B,Feldbach,Klein,2024-04-10,30,Nein,C
+K00754,Hofer Bauhof,B2B,Feldbach,Klein,2025-07-20,21,Nein,C
+K00755,Lang Betriebs-GmbH,B2B,Hartberg,Klein,2024-01-24,14,Ja,A
+K00756,Wagner Agrar GmbH,B2B,Graz-Umgebung,Klein,2025-11-06,21,Nein,C
+K00757,Berger Bauhof,B2B,Gleisdorf,Gross,2026-02-27,21,Nein,B
+K00758,Schmid Landwirtschaft,B2B,Hartberg,Gross,2025-04-21,30,Nein,B
+K00759,Fischer e.U.,B2B,Feldbach,Klein,2025-07-29,14,Nein,A
+K00760,Berger Bauhof,B2B,Hartberg,Mittel,2021-09-25,30,Ja,A
+K00761,Berger Landtechnik,B2C,Suedoststeiermark,Mittel,2026-06-06,14,Nein,C
+K00762,Fischer Landtechnik,B2B,Gleisdorf,Klein,2024-05-02,14,Nein,B
+K00763,Reiter Betriebs-GmbH,B2B,Leibnitz,Klein,2025-08-29,21,Nein,B
+K00764,Eder Landwirtschaft,B2C,Suedoststeiermark,Mittel,2024-03-19,21,Nein,A
+K00765,Leitner KG,B2B,Feldbach,Klein,2022-03-13,21,Nein,B
+K00766,Maier Agrar GmbH,B2B,Weiz,Mittel,2024-09-14,30,Nein,A
+K00767,Winkler Betriebs-GmbH,B2B,Graz-Umgebung,Klein,2023-10-21,14,Nein,C
+K00768,Hofer Agrar GmbH,B2B,Gleisdorf,Klein,2024-12-28,21,Ja,A
+K00769,Berger KG,B2B,Feldbach,Klein,2026-04-16,21,Nein,B
+K00770,Huber Bauhof,B2B,Graz-Umgebung,Klein,2026-06-20,14,Nein,A
+K00771,Huber e.U.,B2B,Suedoststeiermark,Klein,2025-07-04,21,Nein,A
+K00772,Lang KG,B2B,Gleisdorf,Klein,2025-04-07,30,Nein,B
+K00773,Leitner Landwirtschaft,B2B,Gleisdorf,Klein,2024-05-19,21,Nein,B
+K00774,Schwarz KG,B2B,Feldbach,Klein,2022-10-18,14,Ja,A
+K00775,Schmid Landwirtschaft,B2C,Suedoststeiermark,Klein,2025-09-01,21,Nein,A
+K00776,Hofer e.U.,B2B,Gleisdorf,Gross,2026-02-20,30,Nein,A
+K00777,Maier Landwirtschaft,B2B,Feldbach,Mittel,2025-01-27,30,Ja,A
+K00778,Fuchs KG,B2B,Leibnitz,Mittel,2024-09-03,21,Ja,A
+K00779,Gruber KG,B2B,Graz-Umgebung,Klein,2024-09-16,21,Nein,C
+K00780,Hofer Landtechnik,B2B,Suedoststeiermark,Gross,2026-05-12,21,Nein,C
+K00781,Fischer Agrar GmbH,B2C,Hartberg,Klein,2023-10-25,30,Nein,A
+K00782,Weber Betriebs-GmbH,B2B,Feldbach,Klein,2026-05-15,30,Ja,A
+K00783,Fuchs e.U.,B2B,Graz-Umgebung,Klein,2024-05-29,30,Nein,B
+K00784,Reiter Betriebs-GmbH,B2B,Graz-Umgebung,Klein,2026-06-03,21,Ja,A
+K00785,Schwarz Landwirtschaft,B2B,Gleisdorf,Klein,2025-02-21,14,Nein,A
+K00786,Lang Gemeinde,B2B,Weiz,Klein,2022-12-19,21,Nein,B
+K00787,Hofer Landtechnik,B2B,Gleisdorf,Mittel,2025-11-10,14,Nein,A
+K00788,Mayr KG,B2B,Gleisdorf,Klein,2023-09-07,14,Nein,A
+K00789,Pichler e.U.,B2B,Feldbach,Klein,2025-02-01,21,Nein,B
+K00790,Schmid Betriebs-GmbH,B2B,Feldbach,Mittel,2026-01-12,21,Ja,A
+K00791,Weber Landtechnik,B2C,Hartberg,Klein,2022-12-10,30,Nein,A
+K00792,Schmid Agrar GmbH,B2B,Suedoststeiermark,Mittel,2025-10-21,30,Nein,B
+K00793,Winkler Gemeinde,B2B,Feldbach,Mittel,2026-04-14,30,Nein,A
+K00794,Winkler Bauhof,B2B,Hartberg,Klein,2026-05-06,30,Nein,B
+K00795,Steiner Agrar GmbH,B2B,Gleisdorf,Klein,2025-06-02,30,Nein,B
+K00796,Fuchs Betriebs-GmbH,B2B,Feldbach,Klein,2026-04-16,14,Nein,B
+K00797,Wolf Bauhof,B2B,Feldbach,Klein,2025-10-08,21,Ja,A
+K00798,Maier Landtechnik,B2B,Weiz,Mittel,2025-09-06,14,Ja,A
+K00799,Leitner Landtechnik,B2B,Hartberg,Klein,2023-12-09,14,Ja,A
+K00800,Mayr Gemeinde,B2B,Weiz,Klein,2024-06-11,14,Nein,B
+K00801,Weber Landtechnik,B2B,Suedoststeiermark,Klein,2026-02-02,30,Nein,C
+K00802,Fuchs Landwirtschaft,B2C,Feldbach,Klein,2023-03-20,30,Nein,A
+K00803,Lang Bauhof,B2B,Suedoststeiermark,Klein,2025-07-07,30,Nein,B
+K00804,Schmid KG,B2B,Suedoststeiermark,Klein,2026-01-15,30,Ja,A
+K00805,Fuchs Landwirtschaft,B2B,Suedoststeiermark,Klein,2026-04-13,30,Nein,A
+K00806,Reiter Landwirtschaft,B2B,Weiz,Klein,2026-04-04,14,Ja,A
+K00807,Huber Gemeinde,B2B,Weiz,Mittel,2025-11-26,30,Nein,A
+K00808,Winkler Landtechnik,B2B,Weiz,Gross,2024-06-05,21,Nein,B
+K00809,Mayr e.U.,B2B,Leibnitz,Mittel,2025-06-17,30,Nein,C
+K00810,Reiter Landtechnik,B2B,Feldbach,Klein,2025-11-15,14,Ja,A
+K00811,Schmid Gemeinde,B2B,Graz-Umgebung,Klein,2026-04-02,14,Ja,A
+K00812,Berger Landtechnik,B2B,Weiz,Klein,2025-11-24,30,Nein,A
+K00813,Schmid Agrar GmbH,B2B,Leibnitz,Klein,2025-07-19,14,Ja,A
+K00814,Pichler Landwirtschaft,B2B,Hartberg,Mittel,2025-08-05,21,Nein,A
+K00815,Wagner e.U.,B2B,Feldbach,Mittel,2024-08-23,21,Nein,A
+K00816,Fischer KG,B2B,Gleisdorf,Mittel,2026-04-22,14,Nein,B
+K00817,Schwarz Landtechnik,B2B,Gleisdorf,Klein,2023-07-25,14,Ja,A
+K00818,Pichler Betriebs-GmbH,B2C,Gleisdorf,Klein,2024-08-27,30,Nein,A
+K00819,Schwarz KG,B2B,Hartberg,Klein,2025-03-14,30,Nein,B
+K00820,Weber e.U.,B2B,Hartberg,Mittel,2023-12-29,30,Nein,A
+K00821,Maier Landtechnik,B2B,Gleisdorf,Klein,2026-01-07,14,Nein,B
+K00822,Huber Landwirtschaft,B2B,Hartberg,Klein,2024-07-16,14,Ja,A
+K00823,Gruber Gemeinde,B2B,Graz-Umgebung,Klein,2024-08-29,21,Nein,C
+K00824,Pichler Gemeinde,B2B,Feldbach,Klein,2023-06-13,21,Nein,B
+K00825,Berger Bauhof,B2C,Hartberg,Klein,2026-02-03,14,Nein,B
+K00826,Steiner Betriebs-GmbH,B2B,Hartberg,Mittel,2022-10-28,30,Nein,B
+K00827,Pichler e.U.,B2C,Gleisdorf,Klein,2024-02-02,30,Nein,C
+K00828,Schmid Agrar GmbH,B2C,Gleisdorf,Klein,2024-08-26,21,Nein,B
+K00829,Lang KG,B2B,Weiz,Gross,2025-03-24,21,Nein,A
+K00830,Gruber Landwirtschaft,B2B,Graz-Umgebung,Klein,2026-05-04,21,Nein,B
+K00831,Weber Gemeinde,B2B,Hartberg,Klein,2024-04-07,14,Nein,B
+K00832,Fischer Gemeinde,B2C,Leibnitz,Gross,2026-06-12,30,Nein,B
+K00833,Mayr Agrar GmbH,B2B,Feldbach,Mittel,2024-07-12,21,Nein,B
+K00834,Hofer Betriebs-GmbH,B2B,Hartberg,Mittel,2024-08-26,21,Nein,A
+K00835,Wolf Landwirtschaft,B2B,Gleisdorf,Klein,2022-11-08,21,Ja,A
+K00836,Gruber Landtechnik,B2B,Feldbach,Klein,2026-04-12,30,Nein,C
+K00837,Weber KG,B2B,Weiz,Mittel,2026-06-24,14,Nein,B
+K00838,Schmid e.U.,B2B,Weiz,Klein,2024-03-31,14,Nein,B
+K00839,Leitner KG,B2C,Leibnitz,Mittel,2025-04-26,14,Nein,A
+K00840,Wagner Agrar GmbH,B2B,Gleisdorf,Klein,2026-06-12,14,Ja,A
+K00841,Hofer e.U.,B2B,Weiz,Klein,2024-01-03,21,Ja,A
+K00842,Maier KG,B2B,Gleisdorf,Mittel,2026-03-11,30,Nein,B
+K00843,Leitner KG,B2B,Feldbach,Klein,2023-07-04,30,Nein,A
+K00844,Pichler Betriebs-GmbH,B2B,Feldbach,Klein,2023-07-17,21,Nein,B
+K00845,Gruber Gemeinde,B2B,Weiz,Klein,2025-11-22,21,Nein,C
+K00846,Eder KG,B2B,Graz-Umgebung,Klein,2024-05-14,14,Ja,A
+K00847,Wagner Bauhof,B2B,Feldbach,Klein,2025-09-21,21,Nein,B
+K00848,Steiner Gemeinde,B2B,Gleisdorf,Klein,2026-02-26,14,Nein,B
+K00849,Mayr Agrar GmbH,B2B,Leibnitz,Mittel,2022-05-22,30,Ja,A
+K00850,Steiner Landwirtschaft,B2B,Suedoststeiermark,Klein,2025-08-29,21,Nein,B

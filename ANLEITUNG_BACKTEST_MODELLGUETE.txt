@@ -1,0 +1,177 @@
+CASH-AI – Erweiterung: automatischer Backtest + Modellgüte
+================================================================
+
+DATEI
+-----
+Die neue UPDATE_CASH_AI_MODELS.py ersetzt deine bisherige Datei unter:
+
+C:\CashAI\UPDATE_CASH_AI_MODELS.py
+
+Die vorhandenen BAT-Dateien können unverändert weiterverwendet werden:
+
+C:\CashAI\START_MODELL_UPDATE.bat
+C:\CashAI\START_KOMPLETT_UPDATE.bat
+
+Da beide die zentrale Python-Datei starten, läuft der Backtest künftig
+automatisch mit.
+
+
+WAS NEU IST
+-----------
+
+Bei jedem normalen Modelllauf wird zusätzlich ein rollierender
+1-Woche-voraus-Backtest über standardmäßig die letzten 52 historischen
+Wochen durchgeführt.
+
+Ablauf je Backtest-Woche:
+
+Historie bis Woche t-1
+        |
+        +--> XGBoost neu fitten --> Prognose Woche t
+        |
+        +--> SARIMA neu fitten --> Prognose Woche t
+                                      |
+                                      v
+                           Vergleich mit Ist Woche t
+
+Danach wird die Historie erweitert und die nächste historische Woche
+simuliert.
+
+
+KENNZAHLEN
+----------
+
+Automatisch berechnet werden:
+
+- MAE
+- RMSE
+- MAPE
+- WAPE
+
+je:
+
+- XGBoost
+- SARIMA
+
+x
+
+- Cash-In
+- Cash-Out
+- Netto-Cashflow
+
+x
+
+- täglich
+- wöchentlich
+- monatlich
+
+
+METHODISCH WICHTIG
+------------------
+
+Wöchentlich:
+- native Modellprognose
+- primäre Ebene für den Modellvergleich
+
+Täglich:
+- aus der Wochenprognose abgeleitet
+- historische Wochentagsanteile werden ausschließlich aus Daten VOR dem
+  jeweiligen Backtest-Prognosezeitpunkt berechnet
+
+Monatlich:
+- Summe der Backtest-Tagesprognosen
+- unvollständige Teilmonate am Anfang/Ende werden aus der monatlichen
+  Modellgüte ausgeschlossen
+
+MAPE:
+- Perioden mit Ist = 0 werden aus MAPE ausgeschlossen
+- MAE, RMSE und WAPE verwenden weiterhin die verfügbaren Beobachtungen
+
+
+NEUE AUSGABEN
+-------------
+
+C:\CashAI\Ergebnisse\AUTO_UPDATE\Backtest\
+
+- Backtest_Taeglich.csv
+- Backtest_Woechentlich.csv
+- Backtest_Monatlich.csv
+- Modellguete_MAE_RMSE_MAPE_WAPE.csv
+
+
+POWER BI
+--------
+
+Zusätzlich zu:
+
+C:\CashAI\Ergebnisse\AUTO_UPDATE\PowerBI\PowerBI_Cashflow_Gesamt.csv
+
+werden erzeugt:
+
+C:\CashAI\Ergebnisse\AUTO_UPDATE\PowerBI\PowerBI_Modellguete.csv
+
+C:\CashAI\Ergebnisse\AUTO_UPDATE\PowerBI\PowerBI_Backtest_Detail.csv
+
+
+PowerBI_Modellguete.csv eignet sich direkt für Karten, Tabellen und
+Balkendiagramme:
+
+Modell | Intervall | Bereich | MAE | RMSE | MAPE | WAPE
+
+
+PowerBI_Backtest_Detail.csv enthält je historischem Prognosepunkt:
+
+Datum
+Intervall
+Modell
+Bereich
+Ist
+Prognose
+Fehler
+Absoluter_Fehler
+
+
+START
+-----
+
+Normal:
+
+python UPDATE_CASH_AI_MODELS.py
+
+oder Doppelklick:
+
+START_MODELL_UPDATE.bat
+
+
+Mit neuer Datenaufbereitung:
+
+START_KOMPLETT_UPDATE.bat
+
+
+BACKTEST-ZEITRAUM ÄNDERN
+------------------------
+
+Standard = letzte 52 historische Wochen.
+
+Der Standard ist bereits 52 Wochen (= ca. 1 Jahr).
+
+Für z. B. 26 Wochen:
+
+python UPDATE_CASH_AI_MODELS.py --backtest-weeks 26
+
+
+BACKTEST AUS ZEITGRÜNDEN ÜBERSPRINGEN
+-------------------------------------
+
+python UPDATE_CASH_AI_MODELS.py --skip-backtest
+
+
+HINWEIS ZUR PRÄSENTATION
+------------------------
+
+Für die fachliche Modellentscheidung sollte die wöchentliche Modellgüte
+als Hauptvergleich dargestellt werden.
+
+Tägliche und monatliche Kennzahlen können ergänzend gezeigt werden,
+sollten aber als abgeleitete bzw. aggregierte Prognoseebenen bezeichnet
+werden.

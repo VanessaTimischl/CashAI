@@ -1,25 +1,64 @@
-# Python
-__pycache__/
-*.pyc
+# ============================================================
+# CASH AI – Dateien und Ordner, die nicht auf GitHub gehören
+# ============================================================
 
-# VS Code
+# Virtuelle Python-Umgebungen
+.venv/
+venv/
+env/
+
+# Python-Zwischen- und Cachedateien
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Vertrauliche bzw. echte Unternehmensdaten
+# Der Ordner "Eingabedaten" mit anonymisierten Dummy-Daten bleibt erlaubt.
+Eingabedaten_Echt/
+Echtdaten/
+Daten_Echt/
+private_data/
+real_data/
+
+# Zugangsdaten und lokale Konfiguration
+.env
+.env.*
+!.env.example
+secrets.*
+credentials.*
+
+# Automatisch erzeugte CASH-AI-Ergebnisse
+Ergebnisse_CASH_AI/
+
+# Trainierte Modelle und Modell-Zwischendateien
+Modelle_CASH_AI/
+*.joblib
+*.pkl
+
+# Jupyter-Zwischendateien
+.ipynb_checkpoints/
+
+# VS-Code-Einstellungen
 .vscode/
 
-# Rohdaten nicht hochladen
-Angebote/*.xlsx
-Angebote/*.csv
+.matplotlib_cache/
 
-Ausgangsrechnungen/*.xlsx
-Ausgangsrechnungen/*.csv
+# Temporäre Microsoft-Office-Dateien
+~$*.xlsx
+~$*.xls
+~$*.docx
+~$*.pptx
 
-Bestellungen/*.xlsx
-Bestellungen/*.csv
+# Betriebssystemdateien
+.DS_Store
+Thumbs.db
+desktop.ini
 
-Kundenstamm/*.xlsx
-Kundenstamm/*.csv
+# Protokoll- und temporäre Dateien
+*.log
+*.tmp
+*.temp
 
-Lagerbestand/*.xlsx
-Lagerbestand/*.csv
-
-Lieferantenstamm/*.xlsx
-Lieferantenstamm/*.csv
